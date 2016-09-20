@@ -1,0 +1,48 @@
+/*头部登录*/
+.top{width: 100%;height: 160px;}
+.top .loginmax{width:100%;height: 27px;background-color: #f6f6f6; border-bottom: 1px solid #f4f4f4;}
+.top .loginmax .register{margin-left:700px ; height: 27px;}
+.loginmax .register li{ margin:5px 0px;float: left; width: 60px; color:#747474 ; height:16px;border-right: 1px solid #e8e8e8;
+font-size:8px; text-align: center;line-height: 16px;  }
+.loginmax .register li img{vertical-align: middle;}
+.loginmax .register li a{ color: #8E8E8E;}
+.loginmax .register li a:hover{ color: #A02041;}
+.top .loginmax .loginmax-reg{width:1200px;height: 27px; margin: 0 auto;}
+.loginmax .register .reg-last{ border: none;}
+/*搜索*/
+.top .header{width: 100%;height: 133px; }
+.top .header li{float: left;}
+.top .header .header-box{width: 1200px;margin: 0 auto;}
+.top .header .header-img{margin-top: 60px;}
+.top .header .header-input{margin: 65px 0 0 70px;}
+.top .header .header-input li{ width:55px;height: 16px; line-height: 16px;
+text-align: center; border-right:1px solid #747474; color: #D7D7D7;}
+.top .header .header-input input{width: 454px;height: 35px;float: left; border: 2px solid #FF0000; }
+.top .header .header-input span{float: left; color: #fff;  font-size:16px;display:inline-block;width: 92px;height: 41px; background: red; line-height: 41px;text-align: center;}
+.top .header .header-posn{margin:30px 0 0 30px;}
+.top .header .header-box .header-posn li{width:80px;height: 23px; border: 1px solid #E8E8E8;line-height: 23px; text-align: center;}
+.top .header .header-box .header-posn li:hover{background: black;color:#fff; cursor: pointer;}
+/*底部*/
+.footer {
+	float: left;
+    width: 100%;
+  	height: 185px;
+    padding-bottom: 50px;
+    margin-top: 90px;
+    background: #ececec;
+}
+.footer .m_info{ margin: 25px auto;width: 1200px; height: 144px; padding-top: 5px;}
+
+.footer .m_info ul {float: left; padding-bottom: 0;
+padding-left: 32px;*padding-left: 30px;padding-right: 32px;
+padding-top: 0;}
+.footer .m_info ul li{height: 25px; line-height: 25px;}
+.footer .m_info ul li a {color:#747474;}
+.footer .m_info ul .lititle a{font-size: 14px; font-weight: bold; color:#000000;}
+.f_mbs_info {margin:0 auto; padding-top: 10px;  height:50px;}
+.f_mbs_info ul li{ float: left; width: 200px; border-right: 1px solid #808080; padding: 0 10px;}
+.copy_text{ float:left;text-align: center;padding-top: 20px; height: 42px;}
+.copy_text a{ color: #747474;}
+.copy_text { color: #747474;}
+.bottom{ margin: 0 auto;  width: 820px; height: 100px; padding-top: 20px; }
+.bottom ul li{ float:left;}            

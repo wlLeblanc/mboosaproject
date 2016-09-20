@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>梦芭莎列表页</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/list.css" />
+		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<script>
+			$(function(){
+				
+					$('.brand_bg').on('mouseover',function(){
+						var idx=$(this).index();
+						$('.sub_name').eq(idx).hide().siblings().show();
+					})
+					$('.brand_bg').on('mouseout',function(){
+						var idx=$(this).index();
+						$('.sub_name').eq(idx).show();
+					})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="top">
+
+			<div class="loginmax">
+				<div class="loginmax-reg">
+					<ul class="register">
+						<li><a>登录</a></li>
+						<li><a>注册</a></li>
+						<li><a>微信</a></li>
+						<li><a>微博</a></li>
+						<li><img src="../img/shouji.jpg">手机版</li>
+						<li><a>收藏梦芭莎</a></li>
+						<li><a>English</a></li>
+						<li class="reg-last"><a>购物车</a><img src="../img/gouwu.jpg"></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="header">
+				<div class="header-box">
+					 <ul>
+					   	<li class="header-img"><img src="../img/logo.jpg"></li>
+					   	<li class="header-input"><input type="txet"><span>搜索</span>
+					   		<ul>
+					   			<li>秋新品</li>
+					   			<li>连衣裙</li>
+					   			<li>长袖T恤</li>
+					   			<li>寸衫</li>
+					   			<li>针织衫</li>
+					   			<li>外套</li>
+					   			<li>文胸</li>
+					   			<li>男装T恤</li>
+					   		</ul>
+					   	</li>
+					   	<li class="header-posn"><img src="../img/log-posn.jpg">
+					   		<ul>
+					   			<li>经典热卖</li>
+					   			<li>潮流风尚</li>
+					   			<li>特卖精选</li>
+					   		</ul>
+					   	</li>
+			   		</ul>
+				</div>
+			  
+			</div>
+		
+		</div>
+		<div class="search">
+			<ul>
+				<li><img src="../img/listy_01.jpg"></li>
+			</ul>
+		</div>
+		<div class="man_box">
+			<div class="man_box_sear">
+				<div class="mv_box1">你已选择</div>
+				<div class="mv_box2">男装</div>
+				<div class="mv_box3">共有1288件商品</div>
+			</div>
+			<div class="brand">
+				<dl>
+					<dt>品牌：</dt>
+					<dd>
+						<div class="trademark">
+							<a href="#" class="brand_bg"  title="高端商务男装">
+                                    <span class="img">
+                                       <span class="sub_name" style="display: inline;">高端商务男装</span>
+                                        <i class="close"></i>
+                                    </span>
+							</a>
+							<a href="#" class="brand_bg"  title="韩国馆">
+                                    <span class="img">
+                                       <span class="sub_name" style="display: inline;">韩国馆</span>
+                                        <i class="close"></i>
+                                    </span>
+							</a>
+							<a href="#" class="brand_bg"  title="年轻潮流装">
+                                    <span class="img">
+                                       <span class="sub_name" style="display: inline;">年轻潮流装</span>
+                                        <i class="close"></i>
+                                    </span>
+							</a>
+							<a href="#" class="brand_bg"  title="名品馆">
+                                    <span class="img">
+                                       <span class="sub_name" style="display: inline;">名品馆</span>
+                                        <i class="close"></i>
+                                    </span>
+							</a>
+							<a href="#" class="brand_bg"  title="设计师平台">
+                                    <span class="img">
+                                       <span class="sub_name" style="display: inline;">设计师平台</span>
+                                        <i class="close"></i>
+                                    </span>
+							</a>
+					
+							<a href="#" class="brand_bg"  title="设计师平台">
+                                    <span class="img">
+                                       <span class="sub_name" style="display: inline;">设计师平台</span>
+                                        <i class="close"></i>
+                                    </span>
+							</a>
+							<a href="#" class="brand_bg"  title="设计师平台">
+                                    <span class="img">
+                                       <span class="sub_name" style="display: inline;">设计师平台</span>
+                                        <i class="close"></i>
+                                    </span>
+							</a>
+						</div>
+						<div class="gengduo">
+							<span>更多</span>
+						</div>
+					</dd>
+				</dl>
+				<dl>
+                    <dt>男装：</dt>
+                    <dd>
+                        <div class="contentdd" style="height: 37px; overflow: hidden;">
+                                <span>
+                                    <a href="#">T恤</a></span>
+                                <span>
+                                    <a href="#">衬衣</a></span>
+                                <span>
+                                    <a href="#">休闲裤</a></span>
+                                <span>
+                                    <a href="#">卫衣</a></span>
+                                <span>
+                                    <a href="#">毛衣</a></span>
+                                <span>
+                                    <a href="#">大衣</a></span>
+                                <span>
+                                    <a href="#">外套</a></span>
+                                <span>
+                                    <a href="#">短裤</a></span>
+                                <span>
+                                    <a href="#">羽绒</a></span>
+                                <span>
+                                    <a href="#">牛仔裤</a></span>
+                                <span>
+                                    <a href="#">夹克</a></span>
+                                <span>
+                                    <a href="#">西装</a></span>
+                                <span>
+                                    <a href="#">棉服</a></span>
+                                <span>
+                                    <a href="#">套头衫</a></span>
+                                <span>
+                                    <a href="#">背心/马甲</a></span>
+                                <span>
+                                    <a href="#">皮衣</a></span>
+                                <span>
+                                    <a href="#">西裤</a></span>
+                                <span>
+                                    <a href="#">风衣</a></span>
+                                <span>
+                                    <a href="#">皮草</a></span>
+                                <span>
+                                    <a href="#">棒球帽</a></span>
+                                <span>
+                                    <a href="#">棒球衫</a></span>
+                                <span>
+                                    <a href="#">套装</a></span>
+                        </div>
+                   
+                </dl>
+                <dl >
+                    <dt style="line-height: 36px;">版型：</dt>
+                    <dd>
+                        <div class="contentdd">
+                                <span>
+                                    <a href="#">合身型</a></span>
+                                <span>
+                                    <a href="#">标准型</a></span>
+                                <span>
+                                    <a href="#">修身型</a></span>
+                                <span>
+                                    <a href="#">常规型</a></span>
+                                <span>
+                                    <a href="#">时尚型</a></span>
+                                <span>
+                                    <a href="#">宽松型</a></span>
+                                <span>
+                                    <a href="#">标准版</a></span>
+                                <span>
+                                    <a href="#">其他</a></span>
+                                <span>
+                                    <a href="#">直筒型</a></span>
+                        </div>
+                    </dd>
+                </dl>
+                <dl isshow="1" field="0000012">
+                        <dt>花型：</dt>
+                    <dd>
+                        <div class="contentdd" style="height: 37px; overflow: hidden;">
+                                <span>
+                                    <a href="#">净色</a></span>
+                                <span>
+                                    <a href="#">条纹</a></span>
+                                <span>
+                                    <a href="#">格子</a></span>
+                                <span>
+                                    <a href="#">印花</a></span>
+                                <span>
+                                    <a href="#">其他</a></span>
+                                <span>
+                                    <a href="#">图案</a></span>
+                                <span>
+                                    <a href="#">提花</a></span>
+                                <span>
+                                    <a href="#">间条</a></span>
+                                <span>
+                                    <a href="#">花案</a></span>
+                                <span>
+                                    <a href="#">波点</a></span>
+                                <span>
+                                    <a href="#">花草</a></span>
+                                <span>
+                                    <a href="#">动物</a></span>
+                                <span>
+                                    <a href="#">千鸟格</a></span>
+                                <span>
+                                    <a href="#">人物</a></span>
+                                <span>
+                                    <a href="#">卡通</a></span>
+                        </div>
+                    <em class="more">更多</em></dd>
+                </dl>
+                <dl class="adv">
+                    <dt>高级选项：</dt>
+                    <dd>
+                        <div class="contentdd" style="height: auto; overflow: hidden;">
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">尺寸</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">风格</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">厚薄</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">袖长</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">裤长</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">款型</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">领型</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">衣长</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">袖型</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">裤型</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">腰型</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">面料成分</span>
+                                    <i class="arrow"></i></a>    
+                                <a href="javascript:void(0);" class="adv_option">
+                                    <span class="text">颜色</span>
+                                    <i class="arrow"></i></a>    
+                        </div>
+                    </dd>
+                    <dd>
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=m" rel="nofollow">M</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=l" rel="nofollow">L</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=s" rel="nofollow">S</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=xl" rel="nofollow">XL</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=xxl" rel="nofollow">XXL</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=3xl" rel="nofollow">XXXL</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=38" rel="nofollow">38</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=4xl" rel="nofollow">XXXXL</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=f" rel="nofollow">均码</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=30" rel="nofollow">30</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=54" rel="nofollow">54</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=40" rel="nofollow">40</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=52" rel="nofollow">52</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=32" rel="nofollow">32</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=50" rel="nofollow">50</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=48" rel="nofollow">48</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=42" rel="nofollow">42</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=46" rel="nofollow">46</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=44" rel="nofollow">44</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=56" rel="nofollow">56</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=34" rel="nofollow">34</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=31" rel="nofollow">31</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=41" rel="nofollow">41</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=39" rel="nofollow">39</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=29" rel="nofollow">29</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=33" rel="nofollow">33</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=36" rel="nofollow">36</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=43" rel="nofollow">43</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=xs" rel="nofollow">XS</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=37" rel="nofollow">37</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=35" rel="nofollow">35</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=58" rel="nofollow">58</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=28" rel="nofollow">28</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=2r54" rel="nofollow">2R54</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=4r52" rel="nofollow">4R52</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=4r54" rel="nofollow">4R54</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=6r48" rel="nofollow">6R48</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=2r56" rel="nofollow">2R56</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=6r52" rel="nofollow">6R52</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=6r50" rel="nofollow">6R50</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=45" rel="nofollow">45</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=2r52" rel="nofollow">2R52</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=2r50" rel="nofollow">2R50</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=2r48" rel="nofollow">2R48</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=4r50" rel="nofollow">4R50</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=4r46" rel="nofollow">4R46</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=4r48" rel="nofollow">4R48</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=01f" rel="nofollow">110/56</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=01l" rel="nofollow">130/64</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=01i" rel="nofollow">120/60</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=6r46" rel="nofollow">6R46</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;spec=02b" rel="nofollow">140/64</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="top: 32px; display: none;">
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=商务正装" rel="nofollow">商务正装</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=美式休闲" rel="nofollow">美式休闲</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=运动街头" rel="nofollow">运动街头</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=时尚休闲" rel="nofollow">时尚休闲</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=jeans" rel="nofollow">jeans</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=欧美潮牌" rel="nofollow">欧美潮牌</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=原创文艺" rel="nofollow">原创文艺</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=都市系列" rel="nofollow">都市系列</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=日韩潮流" rel="nofollow">日韩潮流</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=欧美风范" rel="nofollow">欧美风范</a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;styles=其他" rel="nofollow">其他</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0000494.html?keyword=男装">正常</a></li>
+                                    <li>
+                                        <a href="006-a0002591.html?keyword=男装">中</a></li>
+                                    <li>
+                                        <a href="006-a0002592.html?keyword=男装">厚</a></li>
+                                    <li>
+                                        <a href="006-a0000495.html?keyword=男装">薄款</a></li>
+                                    <li>
+                                        <a href="006-a0003064.html?keyword=男装">适中</a></li>
+                                    <li>
+                                        <a href="006-a0000496.html?keyword=男装">加厚</a></li>
+                                    <li>
+                                        <a href="006-a0001124.html?keyword=男装">厚款</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0001153.html?keyword=男装">短袖</a></li>
+                                    <li>
+                                        <a href="006-a0001157.html?keyword=男装">长袖</a></li>
+                                    <li>
+                                        <a href="006-a0002532.html?keyword=男装">其他</a></li>
+                                    <li>
+                                        <a href="006-a0001152.html?keyword=男装">无袖</a></li>
+                                    <li>
+                                        <a href="006-a0001154.html?keyword=男装">中袖</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0000599.html?keyword=男装">长裤</a></li>
+                                    <li>
+                                        <a href="006-a0000600.html?keyword=男装">短裤</a></li>
+                                    <li>
+                                        <a href="006-a0000598.html?keyword=男装">五分/中裤</a></li>
+                                    <li>
+                                        <a href="006-a0001076.html?keyword=男装">中裤</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0000601.html?keyword=男装">套头</a></li>
+                                    <li>
+                                        <a href="006-a0002213.html?keyword=男装">羽绒服</a></li>
+                                    <li>
+                                        <a href="006-a0000986.html?keyword=男装">开衫</a></li>
+                                    <li>
+                                        <a href="006-a0002511.html?keyword=男装">棉服</a></li>
+                                    <li>
+                                        <a href="006-a0002630.html?keyword=男装">单西</a></li>
+                                    <li>
+                                        <a href="006-a0000985.html?keyword=男装">毛背心</a></li>
+                                    <li>
+                                        <a href="006-a0000603.html?keyword=男装">开襟</a></li>
+                                    <li>
+                                        <a href="006-a0002632.html?keyword=男装">套西</a></li>
+                                    <li>
+                                        <a href="006-a0000982.html?keyword=男装">可脱卸领</a></li>
+                                    <li>
+                                        <a href="006-a0000602.html?keyword=男装">开胸</a></li>
+                                    <li>
+                                        <a href="006-a0000981.html?keyword=男装">外套</a></li>
+                                    <li>
+                                        <a href="006-a0000975.html?keyword=男装">后中开衩</a></li>
+                                    <li>
+                                        <a href="006-a0002212.html?keyword=男装">羽绒背心</a></li>
+                                    <li>
+                                        <a href="006-a0002631.html?keyword=男装">便西</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0000614.html?keyword=男装">翻领</a></li>
+                                    <li>
+                                        <a href="006-a0000624.html?keyword=男装">圆领</a></li>
+                                    <li>
+                                        <a href="006-a0000621.html?keyword=男装">立领</a></li>
+                                    <li>
+                                        <a href="006-a0000990.html?keyword=男装">反领</a></li>
+                                    <li>
+                                        <a href="006-a0000996.html?keyword=男装">V领</a></li>
+                                    <li>
+                                        <a href="006-a0000987.html?keyword=男装">连帽</a></li>
+                                    <li>
+                                        <a href="006-a0002593.html?keyword=男装">标准领</a></li>
+                                    <li>
+                                        <a href="006-a0001007.html?keyword=男装">其他</a></li>
+                                    <li>
+                                        <a href="006-a0002612.html?keyword=男装">衬衣领</a></li>
+                                    <li>
+                                        <a href="006-a0003409.html?keyword=男装">尖领</a></li>
+                                    <li>
+                                        <a href="006-a0001223.html?keyword=男装">小翻领</a></li>
+                                    <li>
+                                        <a href="006-a0000615.html?keyword=男装">西装领</a></li>
+                                    <li>
+                                        <a href="006-a0000618.html?keyword=男装">可脱卸帽</a></li>
+                                    <li>
+                                        <a href="006-a0002799.html?keyword=男装">平驳领</a></li>
+                                    <li>
+                                        <a href="006-a0000620.html?keyword=男装">毛领</a></li>
+                                    <li>
+                                        <a href="006-a0002611.html?keyword=男装">POLO领</a></li>
+                                    <li>
+                                        <a href="006-a0000989.html?keyword=男装">双层领</a></li>
+                                    <li>
+                                        <a href="006-a0000622.html?keyword=男装">高领</a></li>
+                                    <li>
+                                        <a href="006-a0000988.html?keyword=男装">无帽立领</a></li>
+                                    <li>
+                                        <a href="006-a0002771.html?keyword=男装">可脱卸毛领</a></li>
+                                    <li>
+                                        <a href="006-a0003410.html?keyword=男装">八字领</a></li>
+                                    <li>
+                                        <a href="006-a0000991.html?keyword=男装">衬衫领</a></li>
+                                    <li>
+                                        <a href="006-a0000617.html?keyword=男装">带帽</a></li>
+                                    <li>
+                                        <a href="006-a0001221.html?keyword=男装">一字领</a></li>
+                                    <li>
+                                        <a href="006-a0002755.html?keyword=男装">温莎领</a></li>
+                                    <li>
+                                        <a href="006-a0000997.html?keyword=男装">门筒领</a></li>
+                                    <li>
+                                        <a href="006-a0000619.html?keyword=男装">堆堆领</a></li>
+                                    <li>
+                                        <a href="006-a0003411.html?keyword=男装">扣领尖领</a></li>
+                                    <li>
+                                        <a href="006-a0002800.html?keyword=男装">枪驳领</a></li>
+                                    <li>
+                                        <a href="006-a0001222.html?keyword=男装">大翻领</a></li>
+                                    <li>
+                                        <a href="006-a0002752.html?keyword=男装">异色领</a></li>
+                                    <li>
+                                        <a href="006-a0000999.html?keyword=男装">针织领</a></li>
+                                    <li>
+                                        <a href="006-a0000995.html?keyword=男装">窄领型</a></li>
+                                    <li>
+                                        <a href="006-a0000992.html?keyword=男装">规则领型</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="top: 32px; display: none;">
+                                    <li>
+                                        <a href="006-a0000541.html?keyword=男装">常规款</a></li>
+                                    <li>
+                                        <a href="006-a0000539.html?keyword=男装">中长款</a></li>
+                                    <li>
+                                        <a href="006-a0000540.html?keyword=男装">长款</a></li>
+                                    <li>
+                                        <a href="006-a0000538.html?keyword=男装">短款</a></li>
+                                    <li>
+                                        <a href="006-a0001149.html?keyword=男装">夹克款</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0000547.html?keyword=男装">长袖</a></li>
+                                    <li>
+                                        <a href="006-a0000546.html?keyword=男装">短袖</a></li>
+                                    <li>
+                                        <a href="006-a0003407.html?keyword=男装">平袖</a></li>
+                                    <li>
+                                        <a href="006-a0003001.html?keyword=男装">衬衫袖</a></li>
+                                    <li>
+                                        <a href="006-a0003406.html?keyword=男装">罗文袖</a></li>
+                                    <li>
+                                        <a href="006-a0002739.html?keyword=男装">其他</a></li>
+                                    <li>
+                                        <a href="006-a0000542.html?keyword=男装">无袖</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0002856.html?keyword=男装">合身型</a></li>
+                                    <li>
+                                        <a href="006-a0002855.html?keyword=男装">标准型</a></li>
+                                    <li>
+                                        <a href="006-a0002857.html?keyword=男装">修身型</a></li>
+                                    <li>
+                                        <a href="006-a0001427.html?keyword=男装">常规</a></li>
+                                    <li>
+                                        <a href="006-a0001006.html?keyword=男装">宽松</a></li>
+                                    <li>
+                                        <a href="006-a0002627.html?keyword=男装">其他</a></li>
+                                    <li>
+                                        <a href="006-a0002782.html?keyword=男装">合身</a></li>
+                                    <li>
+                                        <a href="006-a0000591.html?keyword=男装">直筒</a></li>
+                                    <li>
+                                        <a href="006-a0000590.html?keyword=男装">紧腿</a></li>
+                                    <li>
+                                        <a href="006-a0000595.html?keyword=男装">喇叭</a></li>
+                                    <li>
+                                        <a href="006-a0002643.html?keyword=男装">标准</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="006-a0000734.html?keyword=男装">常规</a></li>
+                                    <li>
+                                        <a href="006-a0001158.html?keyword=男装">中腰</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="top: 64px; display: none;">
+                                    <li>
+                                        <a href="006-a0001004.html?keyword=男装">棉</a></li>
+                                    <li>
+                                        <a href="006-a0000645.html?keyword=男装">聚酯纤维</a></li>
+                                    <li>
+                                        <a href="006-a0000650.html?keyword=男装">羊毛</a></li>
+                                    <li>
+                                        <a href="006-a0001005.html?keyword=男装">氨纶</a></li>
+                                    <li>
+                                        <a href="006-a0000646.html?keyword=男装">纯棉</a></li>
+                                    <li>
+                                        <a href="006-a0001146.html?keyword=男装">锦纶</a></li>
+                                    <li>
+                                        <a href="006-a0002120.html?keyword=男装">桑蚕丝</a></li>
+                                    <li>
+                                        <a href="006-a0002155.html?keyword=男装">粘纤</a></li>
+                                    <li>
+                                        <a href="006-a0000661.html?keyword=男装">腈纶</a></li>
+                                    <li>
+                                        <a href="006-a0002582.html?keyword=男装">长绒棉</a></li>
+                                    <li>
+                                        <a href="006-a0000663.html?keyword=男装">丝光棉</a></li>
+                                    <li>
+                                        <a href="006-a0002738.html?keyword=男装">莱赛尔</a></li>
+                                    <li>
+                                        <a href="006-a0002057.html?keyword=男装">天丝</a></li>
+                                    <li>
+                                        <a href="006-a0000656.html?keyword=男装">聚脂纤维</a></li>
+                                    <li>
+                                        <a href="006-a0000669.html?keyword=男装">混纺</a></li>
+                                    <li>
+                                        <a href="006-a0001142.html?keyword=男装">莫代尔</a></li>
+                                    <li>
+                                        <a href="006-a0000649.html?keyword=男装">羊绒</a></li>
+                                    <li>
+                                        <a href="006-a0000658.html?keyword=男装">绵羊皮</a></li>
+                                    <li>
+                                        <a href="006-a0000665.html?keyword=男装">麻</a></li>
+                                    <li>
+                                        <a href="006-a0001008.html?keyword=男装">亚麻</a></li>
+                                    <li>
+                                        <a href="006-a0000938.html?keyword=男装">拉绒卫衣</a></li>
+                                    <li>
+                                        <a href="006-a0000520.html?keyword=男装">PU</a></li>
+                                    <li>
+                                        <a href="006-a0000666.html?keyword=男装">丝</a></li>
+                                    <li>
+                                        <a href="006-a0002528.html?keyword=男装">再生纤维素纤维</a></li>
+                                    <li>
+                                        <a href="006-a0003165.html?keyword=男装">莱赛尔纤维</a></li>
+                                    <li>
+                                        <a href="006-a0000648.html?keyword=男装">涤棉混纺</a></li>
+                                    <li>
+                                        <a href="006-a0003282.html?keyword=男装">獭兔毛皮</a></li>
+                                    <li>
+                                        <a href="006-a0000670.html?keyword=男装">牛仔</a></li>
+                                    <li>
+                                        <a href="006-a0002790.html?keyword=男装">纤维素纤维</a></li>
+                                    <li>
+                                        <a href="006-a0002562.html?keyword=男装">晴纶</a></li>
+                                    <li>
+                                        <a href="006-a0002794.html?keyword=男装">铜氨</a></li>
+                                    <li>
+                                        <a href="006-a0000659.html?keyword=男装">涤纶</a></li>
+                                    <li>
+                                        <a href="006-a0000660.html?keyword=男装">羊皮</a></li>
+                                    <li>
+                                        <a href="006-a0002119.html?keyword=男装">人造丝</a></li>
+                                    <li>
+                                        <a href="006-a0000674.html?keyword=男装">猪皮</a></li>
+                                    <li>
+                                        <a href="006-a0002737.html?keyword=男装">吉萨棉</a></li>
+                                    <li>
+                                        <a href="006-a0003417.html?keyword=男装">太极石</a></li>
+                                    <li>
+                                        <a href="006-a0002797.html?keyword=男装">黏胶</a></li>
+                                    <li>
+                                        <a href="006-a0001231.html?keyword=男装">人棉</a></li>
+                                    <li>
+                                        <a href="006-a0000668.html?keyword=男装">化纤</a></li>
+                                    <li>
+                                        <a href="006-a0003018.html?keyword=男装">麂皮</a></li>
+                                    <li>
+                                        <a href="006-a0003288.html?keyword=男装">冰爽丝</a></li>
+                                    <li>
+                                        <a href="006-a0002148.html?keyword=男装">粘胶</a></li>
+                                    <li>
+                                        <a href="006-a0003283.html?keyword=男装">水貂毛皮</a></li>
+                                    <li>
+                                        <a href="006-a0000940.html?keyword=男装">条纹布</a></li>
+                                    <li>
+                                        <a href="006-a0002583.html?keyword=男装">美棉</a></li>
+                                    <li>
+                                        <a href="006-a0002830.html?keyword=男装">兔毛</a></li>
+                                    <li>
+                                        <a href="006-a0002788.html?keyword=男装">蚕丝</a></li>
+                                    <li>
+                                        <a href="006-a0002786.html?keyword=男装">麻赛尔</a></li>
+                            </ul>  
+                            <ul class="sl_tab_cont_item" style="display: none;">
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=蓝色" title="蓝色" rel="nofollow">
+                                            <img alt="蓝色" src="http://i1.mbscss.com/img/search/2012/color/蓝色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=黑色" title="黑色" rel="nofollow">
+                                            <img alt="黑色" src="http://i1.mbscss.com/img/search/2012/color/黑色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=灰色" title="灰色" rel="nofollow">
+                                            <img alt="灰色" src="http://i1.mbscss.com/img/search/2012/color/灰色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=绿色" title="绿色" rel="nofollow">
+                                            <img alt="绿色" src="http://i1.mbscss.com/img/search/2012/color/绿色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=红色" title="红色" rel="nofollow">
+                                            <img alt="红色" src="http://i1.mbscss.com/img/search/2012/color/红色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=印花" title="印花" rel="nofollow">
+                                            <img alt="印花" src="http://i1.mbscss.com/img/search/2012/color/印花.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=黄色" title="黄色" rel="nofollow">
+                                            <img alt="黄色" src="http://i1.mbscss.com/img/search/2012/color/黄色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=其他" title="其他" rel="nofollow">
+                                            <img alt="其他" src="http://i1.mbscss.com/img/search/2012/color/其他.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=紫色" title="紫色" rel="nofollow">
+                                            <img alt="紫色" src="http://i1.mbscss.com/img/search/2012/color/紫色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=粉红" title="粉红" rel="nofollow">
+                                            <img alt="粉红" src="http://i1.mbscss.com/img/search/2012/color/粉红.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=橙色" title="橙色" rel="nofollow">
+                                            <img alt="橙色" src="http://i1.mbscss.com/img/search/2012/color/橙色.jpg"></a></li>
+                                    <li>
+                                        <a href="?keyword=男装&amp;colortype=棕色" title="棕色" rel="nofollow">
+                                            <img alt="棕色" src="http://i1.mbscss.com/img/search/2012/color/棕色.jpg"></a></li>
+                            </ul>  
+                    </dd>
+                </dl>
+			</div>
+		</div>
+		<div class="list_show"></div>
+	</body>
+</html>

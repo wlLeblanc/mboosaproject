@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)https://login.moonbasa.com/home/register -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <title>梦芭莎注册</title>
+    <meta name="keywords" content="女装、内衣、文胸、童装、鞋包">
+    <meta name="description" content="梦芭莎官方网站，全球女性购物首选！网购时尚女装、内衣、文胸、男装、化妆品、童装、鞋子、包包尽在梦芭莎！30天无理由退换货，梦芭莎打造全球女性网购首选时装品牌。">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">    
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var CommonDomain = "http://common.moonbasa.com";
+        var ShoppingCartDomain = "http://shopping.moonbasa.com";
+        var LoginDomain = "http://login.moonbasa.com";
+        var MemberDomain = "http://member.moonbasa.com";
+    </script>
+    <script type="text/javascript" src="./梦芭莎注册_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./梦芭莎注册_files/ml.validate.js"></script> 
+    
+    <link href="./梦芭莎注册_files/vpwd.css" rel="stylesheet" type="text/css">
+    <link href="./梦芭莎注册_files/jquery.ui.dialog.css" rel="stylesheet" type="text/css">
+    <link href="./梦芭莎注册_files/rcmd.css" rel="stylesheet" type="text/css">
+    <script src="./梦芭莎注册_files/ml.verifycode.js" type="text/javascript"></script>
+    <script src="./梦芭莎注册_files/jquery.ui.dialog.js" type="text/javascript"></script>
+    <script src="./梦芭莎注册_files/login.validate.js" type="text/javascript"></script>
+    <script src="./梦芭莎注册_files/register.vpwd.js" type="text/javascript"></script>
+    <script src="./梦芭莎注册_files/register.js" type="text/javascript"></script>
+    <script src="./梦芭莎注册_files/placeholder.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var item_obj = {
+                style: {
+                    'left': '16px',
+                    'padding-left': '22px'
+                }
+            };
+
+            var item_obj1 = {
+                style: {
+                    'padding-left': '12px'
+                }
+            };
+
+            $('.J_code_item').placeholder(item_obj1);
+            $('.J_item').placeholder(item_obj);
+
+            $("#member_reg_ValImg").addClass('checkCodeImg');
+        });
+    
+    </script>
+
+</head>
+<body>
+     <div class="head">
+        <a href="http://www.moonbasa.com/" target="_blank">
+            
+            <p><img alt="" src="../images/login2.jpg"></p> 
+
+        </a>
+    </div>
+    
+    
+    <div class="main">
+        
+<div class="user_frame">
+    <div class="user_info">
+        <div class="user_info_l">
+             
+             <p><a><img src="../images/login3.jpg" alt=""></a></p> 
+
+        </div>
+        <div class="user_info_r" id="dRegister">
+            <div class="login-header">
+                <span onclick="window.location.href='login.html';" class="login-txt_2">登录</span>
+                <span class="login-txt" style="color:#000;">注册<span class="login_bor_1"></span></span>               
+            </div>
+            <div class="form_style" style="height:auto;">
+                <form method="post" id="form">
+                    <input type="hidden" name="token" id="token" >
+                    <input type="hidden" name="method" id="method" value="3">
+                    <input type="hidden" name="recomCode" value="">
+                    <input name="__molaVerificationToken_register" type="hidden" >
+                    <div class="f_item pt52" style="display:none" id="loginMsg">                
+                    </div>
+                    <div class="f_item J_item">
+                        <label class="i_label name-label" for="txtLoginID"></label>
+                        <input type="text" id="txtEMail" tabindex="1" name="txtEMail" class="i_text" placeholder="邮箱">
+                        <label id="txtEMailCorrent">
+                        </label>
+                        <div id="txtEMailTip">
+                        </div>
+                    </div>
+             
+                    <div class="f_item J_item">
+                        <label class="i_label name-label" for="txtLoginID"></label>
+                        <input type="text" name="txtMobile" id="txtMobile" tabindex="2" class="i_text" placeholder="手机号">
+                        <label id="txtMobileCorrent"></label>
+                        <div id="txtMobileTip"></div>
+                    </div>
+             
+                    <div class="f_item J_item">
+                        <label class="i_label pwd-label" for="txtLoginPwd"></label>
+                        <input type="password" name="txtRegPwd" id="txtRegPwd" tabindex="-1" class="i_text" placeholder="密码">
+                        <label id="txtRegPwdCorrent"></label>
+                        <div id="txtRegPwdTip" class="reg-txt"></div>
+                    </div>        
+                    <div class="f_item J_item">
+                        <label class="i_label pwd-label" for="txtLoginPwd"></label>
+                        <input type="password" name="txtConfirmPwd" id="txtConfirmPwd" tabindex="-1" class="i_text" placeholder="确定密码">
+                        <label id="txtConfirmPwdCorrent"></label>
+                        <div id="txtConfirmPwdTip"></div>                    
+                    </div>
+                
+                    <div class="f_item_code J_code_item" id="securityCode" style="padding-bottom: 15px;">
+                        <span class="checkcode-notice" style="display: inline;">点击下方图片，转到正确方向</span>
+                        <span class="checkcode-link" style="cursor: pointer; top: 0px;" id="aRegChgVCode">换一组</span>
+                        <div class="code-line-content">
+                            <div class="code-line">
+                                <input type="text" style="display:none" name="member_reg_Code" id="member_reg_Code" class="i_text_checkCode" placeholder="验证码" maxlength="7">
+                                <input type="hidden" name="member_reg_key" id="member_reg_key" value="2adbfb32-de79-8e0e-39f4-73597bf3f31e">
+                                <div id="container"><div class="chect_code_img"><div class="chect_image s0" n="" onclick="javascript:MLVerifyCode.ChangeImgPos(this);" style="background-image:url(/verifycode/showimg?guid=2adbfb32-de79-8e0e-39f4-73597bf3f31e&amp;token=c997aa63-62d2-4504-a02d-4018de942675)"></div><input type="hidden" class="img_code_spin" id="img_code_spin_0" name="" value="0"><div class="chect_image s1" onclick="javascript:MLVerifyCode.ChangeImgPos(this);" style="background-image:url(/verifycode/showimg?guid=2adbfb32-de79-8e0e-39f4-73597bf3f31e&amp;token=c997aa63-62d2-4504-a02d-4018de942675)"></div><input type="hidden" class="img_code_spin" id="img_code_spin_1" name="" value="0"><div class="chect_image s2" onclick="javascript:MLVerifyCode.ChangeImgPos(this);" style="background-image:url(/verifycode/showimg?guid=2adbfb32-de79-8e0e-39f4-73597bf3f31e&amp;token=c997aa63-62d2-4504-a02d-4018de942675)"></div><input type="hidden" class="img_code_spin" id="img_code_spin_2" name="" value="0"><div class="chect_image s3" onclick="javascript:MLVerifyCode.ChangeImgPos(this);" style="background-image:url(/verifycode/showimg?guid=2adbfb32-de79-8e0e-39f4-73597bf3f31e&amp;token=c997aa63-62d2-4504-a02d-4018de942675)"></div><input type="hidden" class="img_code_spin" id="img_code_spin_3" name="" value="0"></div></div>
+                            </div>
+                        </div>
+                        <div id="member_reg_CodeTip" style="top:99px"></div>
+                    </div>
+                    <div class="f_item reg_btn" id="dItemReg">
+                        <input type="button" name="btnRegister" id="btnRegister" class="i_btn_ok" value="同意以下协议，提交" style="overflow:auto;">
+                    </div>
+                    <div class="f_item pt32">
+                        <span class="rmb-content">
+                            <input type="checkbox" checked="true" id="J_rmb_btn">同意<span class="mbs-articles" id="J_mbs_articles">梦芭莎注册条款</span>
+                        </span>
+                    </div>
+                
+                    <input type="hidden" id="hRegsrc" name="hRegsrc" value="">
+                </form> <!-- calss="form_sytle" -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    $('#J_mbs_articles').bind('click', function () {
+        var txt = $('#J_deal').val();
+
+        $('<div class="J_dialog">' + txt + '</div>').dialog({
+            title: '梦芭莎用户注册协议',
+            height: 516,
+            width: 950,
+            position: ['center', 130]
+
+        });
+    });
+
+    $('body').delegate('#J_agree', 'click', function () {
+        $('.J_dialog').dialog('close'); 
+    });
+</script>
+
+    </div>
+    <div class="foot">
+        <div class="footer">
+            <a href="http://www.moonbasa.com/" rel="nofollow" title="女性内衣专家梦芭莎首页">首页</a> 
+            <a href="http://help.moonbasa.com/help/detial/33" rel="nofollow">公司简介</a> 
+            <a href="http://www.moonbasa.com/" title="梦芭莎">旗下品牌</a> 
+            <a href="http://help.moonbasa.com/help/ShopMap.aspx" rel="nofollow">零售店址</a> 
+            <a href="http://union.moonbasa.com/" title="梦芭莎网站联盟">梦芭莎网盟</a> 
+            <a href="http://fenxiao.moonbasa.com/">网店代理</a> 
+            <a href="http://www.moonbasa.com/home/sitemap" target="_blank" title="梦芭莎网店代理">网站地图</a> 
+            <a href="http://www.moonbasa.com/category">友情链接</a> 
+            <a href="http://help.moonbasa.com/help/jop.html" title="梦芭莎评论">加入我们</a> 
+            <br>
+            Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公司 All Rights Reserved 粤B2-20080069号
+        </div>
+    </div>
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dialog" style="display: none; z-index: 10000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-dialog">系统提示</span></div><div style="text-align: center;" id="dialog" class="ui-dialog-content ui-widget-content"><img alt="数据加载中..." src="./梦芭莎注册_files/loading.gif" style="padding: 15px;"><br>恭喜您注册成功，系统正在为您跳转...</div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dialogRcmd" style="display: none; z-index: 10000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-dialogRcmd">&nbsp;</span><a href="https://login.moonbasa.com/home/register#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div style="text-align: center;" id="dialogRcmd" class="ui-dialog-content ui-widget-content">
+ <div class="tc_01" style="padding-top:20px; height:334px;">
+        <div class="tc_item tc_item1">感谢您参与“推荐好友，1000元分享”活动！</div>
+        <div class="tc_item tc_item1">为保证成功接收赠送礼券信息，请完成手机认证！</div>
+        <div class="tc_item tc_item1" style="text-align:left;"><label style="text-align:right;width:200px; float:left;">您参与手机号：</label><b id="bMobile">15012345678</b></div>
+        <div class="tc_item tc_item2" style="text-align:left;"><label style="text-align:right;width:200px; float:left;">&nbsp;</label><a href="javascript:void(0)" onclick="Rcmd.SendSms()"><img alt="" src="./梦芭莎注册_files/icon20.png"></a></div>
+        <div class="tc_item tc_item2" style="display:none;" id="resetSend">校验码已发出请查收短信，如果没有收到请在<span id="sMin" style="color: #AB0036; font-weight: bold;">60</span>秒后重新获取短信校验码</div>
+        <div class="tc_item tc_item3" style="text-align:left;"><label style="text-align:right;width:200px; float:left;">输入短信校验码：</label><input type="text" name="mobilevcode" id="mobilevcode" class="i_text"></div>
+        <div class="tc_item tc_item3" style="text-align:left;"><label style="text-align:right;width:200px; float:left;">&nbsp;</label><a href="javascript:void(0)" onclick="Rcmd.CheckSms()"><img alt="" src="./梦芭莎注册_files/icon40.png"></a> </div>
+</div> 
+</div></div></body></html>

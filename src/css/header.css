@@ -1,0 +1,11 @@
+﻿body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body{color:#555;font-size:12px;font-family:"宋体";line-height:22px;background:#cecccf}
+.clear{clear:both}
+img{border:0}
+a{color:#797979;text-decoration:none;font-size:12px}
+a:hover{color:#ab0036;text-decoration:none}
+.head{width: 1016px;margin:0 auto}
+.head img{float:left}.foot{width:980px;margin:0 auto}
+.footer{width:980px;float:left;text-align:center;color:#989898;padding-top:78px}
+.footer a{color:#888}.hide{display:none}
+input,textarea{outline:none;}

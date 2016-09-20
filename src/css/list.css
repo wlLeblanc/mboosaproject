@@ -1,0 +1,128 @@
+.search{
+	width: 1200px;
+	margin: 0 auto;
+	height:154px;
+	
+	
+}
+.search li{
+	margin-top: 30px;
+	float: left;
+}
+.man_box{
+	margin: 0 auto;
+	width: 1200px;
+	height: 368px;
+	
+}
+.man_box_sear{
+	width: 1200px;
+	height: 50px;
+}
+.man_box_sear div{
+	
+	float: left;
+	height: 50px;
+}
+.mv_box1{
+	width: 50px;
+	
+}
+.mv_box2{
+	width: 800px;
+}
+.mv_box3{
+	width: 300px;
+	
+	text-align: right;
+}
+.brand{
+	width: 1196px;
+	height: 116px;
+	border: 2px solid #d6d6d6 ;
+}
+.brand dl{
+	border: 1px solid #e1e1e1;
+	width: 1196px;
+	
+	
+}
+.brand dl dt{ 
+	float: left;
+	width: 112px;
+	
+}
+.brand dl dd{
+	float: left;
+	width: 1080px;
+	
+}
+
+.brand dl dd .trademark{
+	width: 842px;
+	height: 100px;
+	float: left;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.brand dl dd .trademark a.brand_bg {
+    position: relative;
+    width: 161px;
+    height: 45px;
+    border: 1px solid #dedede;
+    float: left;
+    padding: 0;
+    margin: -1px -1px 0 0;
+    line-height: 36px;
+    text-align: center;
+    color: #666;
+}
+.brand dl dd .trademark a.brand_bg:hover{
+	background: url(../img/3.png);
+}
+.brand dl dd .gengduo{
+	float: left;
+	width: 234px;
+	height: 116px;
+	text-align: right;
+	padding-top: 8px;
+    padding-bottom: 8px;
+}
+.brand dl dd .trademark .gengduo span{
+	float: right;
+}
+.brand #dl1{
+	height: 37px;
+}
+.brand dl dt {
+    width: 108px;
+    height: 37px;
+    line-height: 37px;
+    color: #4a4a4a;
+    font-weight: bold;
+    text-indent: 30px;
+}
+.brand  dl dd .contentdd {
+    width: 820px;
+    overflow: hidden;
+    float: left;
+    padding-left: 22px;
+    }
+.brand  dl dd span {
+    float: left;
+    line-height: 37px;
+}
+.brand dl dd a {
+    display: inline-block;
+    width: 82px;
+    color: #666;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.list_show{
+	width: 1200px;
+	height: 500px;
+	background: #000000;
+	margin: 0 auto;
+}

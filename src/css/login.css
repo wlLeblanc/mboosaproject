@@ -1,0 +1,977 @@
+﻿.main {
+    width: 1016px;
+    margin: 0 auto
+}
+
+.user_frame {
+    float: left;
+    position: relative;
+    padding-bottom: 47px
+}
+
+h2.title {
+    width: 976px;
+    background: #f4f4f4;
+    margin: 1px;
+    display: inline-block;
+    height: 35px;
+    clear: both
+}
+
+.user_info {
+    width: 1016px;
+    overflow: hidden;
+    clear: both;
+    background: #fff;
+    padding-bottom: 6px;}
+
+.user_info_l {
+    width: 505px;
+    height: auto;
+    float: left;
+    overflow: hidden
+}
+
+.user_info_l img {
+    margin: 23px 18px 20px 84px;
+}
+.login-txt, .login-txt_2 {
+    color: #9f9f9f;
+	display: inline-block;
+	width: 49%;
+	text-align:center;
+	font-size: 14px;
+	padding-bottom: 15px;
+	position: relative;
+}
+.login_active {
+	color: #000;
+}
+.login-header a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 203px;
+	display: inline-block;
+	width: 50%;
+	text-align:center;
+}
+.f_item.pt12 {
+    height: 60px;
+	padding-top: 30px;
+}
+.f_item.pt39 {
+    height: 35px;
+    border-top: 1px dotted #b2b2b2;
+    padding-top: 10px;
+    width: 295px
+}
+.f_item.pt30 {
+    height: 57px
+}
+.more-login,.f_item.pt30,.f_item.pt39 {
+    color: #6f6f6f
+}
+.f_item {
+    width: 365px;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+	padding: 0;
+    margin: 0;
+}
+#txtLoginIDTip {
+    color: #e20263;
+    text-indent: 5px;
+    position: absolute;
+    top: 40px
+}
+#txtLoginPwdTip {
+	color: #e20263;
+}
+#txtLoginMobTip {
+	color: #e20263;
+}
+.rmb-content {
+    color: #666
+}
+
+.mbs-articles {
+    color: #e30164;
+    cursor: pointer
+}
+
+.f_register a {
+    color: #e00065
+}
+
+.f_register {
+    margin-left: 235px
+}
+
+.song {
+    position: absolute;
+    background: url(/img/bg0.png) no-repeat;
+    width: 284px;
+    height: 33px;
+    color: #ea738f;
+    text-align: center;
+    left: 110px;
+    top: 15px;
+    line-height: 30px
+}
+
+label.i_label {
+    width: 45px;
+    height: 35px;
+    font: 12px/25px '宋体';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: -4px;}
+
+.name-label,.pwd-label,.re-log-label,.log-check-label {
+    background-image: url(/img/login_icon0.png)
+}
+
+.name-label {
+    background-position: -5px -48px
+}
+
+.pwd-label,.re-log-label {
+    background-position: -4px -94px
+}
+
+.log-label {
+    position: absolute;
+    top: 12px;
+    left: 39px;
+    color: #999;
+    font-family: "微软雅黑" "宋体";
+    font-size: 14px
+}
+.log-check-code {
+    left: 15px
+}
+label.f_forgot_pwd {
+    width: 80px;
+    padding-left: 10px
+}
+label.f_forgot_pwd a {
+    color: #777
+}
+input.i_text {
+    text-indent: 31px;
+}
+input.i_text,input.i_text_checkCode {
+    width: 322px;
+    height: 40px;
+    border: #c9c9c9 1px solid;
+    padding-left: 0;
+    line-height: 40px;
+    position: absolute;
+    left: 2px;
+    z-index: 0;
+	border-radius: 4px;
+}
+input.i_text_checkCode {
+    left: 2px;
+	width: 180px;
+    height: 40px;
+    text-indent: 11px; 
+	border: 1px solid #c9c9c9;
+}
+a.checkcode-link {
+    width: 48px;
+    height: 24px;
+    color: #797979;
+    text-align: center;
+    line-height: 24px;
+    padding-right: 7px
+}
+img.checkCodeImg, .J_code_item img{
+    vertical-align: middle;
+    display: inline-block;
+}
+input.i_text_error {
+    border: #e60065 1px solid
+}
+label.i_correct {
+    width: 30px;
+    height: 18px;
+    background: url(/img/l_090.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 40px;
+    top: 14px
+}
+.f_explain,.f_explain_code {
+    padding-left: 20px;
+    background: url(/img/l_060.jpg) no-repeat left 5px;
+    position: absolute;
+    top: 40px;
+}
+.reg-txt.f_explain {
+	top: 40px;
+}
+span.check_code {
+    display: inline-block
+}
+.i_btn_ok {
+    width: 324px;
+    height: 43px;
+    overflow: hidden;
+    color: #fff;
+    border: 0;
+    font: 15px/43px '微软雅黑';
+    text-align: center;
+    cursor: pointer;
+    background: #e30165;
+    display: block;
+    line-height: 40px;
+    margin-left: 2px;
+	border-radius: 4px;
+}
+input.i_btn_disabled {
+    width: 324px;
+    height: 40px;
+    overflow: hidden;
+    color: #000;
+    border: 0;
+    font: 16px/30px '微软雅黑';
+    text-align: center;
+    cursor: pointer
+}
+.user_info_r {
+    width: 400px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    text-align: left; 
+	padding-top: 16px;
+}
+.form_style {
+	padding: 27px 0 0 34px;
+	border: 1px solid #dcdcdc;
+	height: auto;
+	width: 364px;
+	position: relative;
+}
+.form_style form {
+	width: 364px;
+}
+.user_info_r b {
+    height: 45px;
+    line-height: 45px;
+}
+a.i_alink_r {
+    background: url(/img/l_070.jpg) no-repeat;
+    color: #fff;
+    border: 0;
+    font: 14px/30px '微软雅黑';
+    text-align: center;
+    display: inline-block;
+    width: 87px;
+    height: 30px;
+}
+.fm_gray {
+    width: 980px;
+    height: 4px;
+    background: url(/img/l_010.jpg) no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    _bottom: -13px;
+}
+
+a.i_findpsd {
+    color: #d2023c;
+    text-decoration: underline
+}
+
+dl.r_success {
+    width: 744px;
+    padding-left: 264px;
+    padding-top: 49px;
+    float: left;
+    overflow: hidden;
+}
+dl.r_success dt {
+    padding-left: 59px;
+    float: left;
+    background: url(/img/l_10.jpg) no-repeat left top;
+    width: 550px;
+    padding-bottom: 40px;
+}
+
+dl.r_success dt b {
+    font: 25px/30px '微软雅黑';
+    color: #e50163;
+    height: 30px;
+    width: 100%;
+}
+dl.r_success dt span {
+    width: 100%;
+    float: left;
+    padding: 10px 0
+}
+dl.r_success dt span font {
+    color: #d4003b;
+    font-size: 30px;
+    font-family: 'arial';
+}
+a.i_btn_go {
+    width: 118px;
+    height: 33px;
+    background: url(/img/l_110.jpg) no-repeat;
+    font: 20px/30px '微软雅黑';
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+dl.r_success dd {
+    float: left;
+    width: 533px;
+    padding: 10px 0;
+    border-top: #ccc 1px dashed;
+    color: #777;
+}
+
+a.i_info {
+    color: #d50038;
+    text-decoration: underline;
+}
+
+span.check_email,span.check_phone {
+    width: 285px;
+    padding-left: 46px;
+    float: left;
+    display: block;
+    background: url(/img/l_120.jpg) no-repeat left 5px;
+    height: 50px
+}
+
+span.check_phone {
+    width: 150px;
+    background: url(/img/l_130.jpg) no-repeat left top;
+    padding-left: 33px
+}
+
+dl.r_success dd.nobt {
+    border-top: 0
+}
+
+dl.r_success dd.f_help {
+    background: url(/img/l_140.jpg) no-repeat left 28px;
+    padding-left: 72px;
+    line-height: 52px;
+    text-decoration: underline;
+    height: 52px
+}
+
+dl.r_success dd.f_help a {
+    padding: 0 5px 0 6px
+}
+
+span.ad_pic {
+    padding-top: 33px;
+    display: inline-block
+}
+
+span.loginmsg {
+    float: left;
+    overflow: hidden;
+    width: 322px;
+    border: 1px solid #eb1764;
+    color: #eb1764;
+	text-align: center;
+}
+
+.deal {
+    width: 540px;
+    height: 106px;
+    padding: 5px;
+    overflow-y: scroll;
+    border: 1px solid #c9c9c9;
+    font-size: 12px;
+    font-family: '宋体';
+    color: #666;
+    line-height: 20px;
+    float: left;
+    margin-left: 15px
+}
+
+.deal b {
+    display: block;
+    width: 510px;
+    text-align: center;
+
+  
+
+    .user_frame {
+        width: 978px;
+        border: #ccc 1px solid;
+        float: left;
+        margin-top: 11px;
+        position: relative;
+        padding-bottom: 47px
+    }
+
+    h2.title {
+        width: 976px;
+        background: #f4f4f4;
+        margin: 1px;
+        display: inline-block;
+        height: 35px;
+        clear: both
+    }
+
+    .user_info {
+        width: 978px;
+        overflow: hidden;
+        clear: both
+    }
+
+    .user_info_l {
+        width: 594px;
+        height: auto;
+        float: left;
+        overflow: hidden;
+        margin-top: 41px
+    }
+
+    .login-txt,.login-header a {
+        font-size: 14px;
+        font-family: "微软雅黑" "宋体"
+    }
+
+    .login-header {
+        margin-left: 8px
+    }
+
+    .login-txt {
+        color: #000;
+        text-indent: 8px
+    }
+
+    .login-header a {
+        color: #df025f;
+        text-decoration: none;
+        margin-left: 110px
+    }
+
+    .f_item.pt12 {
+        height: 48px
+    }
+
+    .f_item.pt39 {
+        height: 35px;
+        border-bottom: 1px dotted #b2b2b2;
+        width: 256px
+    }
+
+    .f_item.pt30 {
+        height: 35px;
+        padding-top: 20px
+    }
+
+    .more-login,.f_item.pt30,.f_item.pt39 {
+        color: #6f6f6f
+    }
+
+    .f_item {
+        width: 300px;
+        overflow: hidden;
+        height: 70px;
+        position: relative
+    }
+
+    .rmb-content {
+        color: #666
+    }
+
+    .f_register a {
+        color: #e00065
+    }
+
+    .f_register {
+        margin-left: 50px
+    }
+
+    .song {
+        position: absolute;
+        background: url(/img/bg0.png) no-repeat;
+        width: 284px;
+        height: 33px;
+        color: #ea738f;
+        text-align: center;
+        left: 110px;
+        top: 15px;
+        line-height: 30px
+    }
+
+    label.i_label {
+        height: 36px;
+        font: 12px/25px '宋体';
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 5px
+    }
+
+    .name-label,.pwd-label,.re-log-label,.log-check-label {
+        background-image: url(/img/login_icon0.png)
+    }
+
+    .name-label {
+        background-position: 0 -52px
+    }
+
+    .pwd-label,.re-log-label {
+        background-position: 0 -99px
+    }
+
+    .log-label {
+        position: absolute;
+        top: 12px;
+        left: 39px;
+        color: #999;
+        font-family: "微软雅黑" "宋体";
+        font-size: 14px
+    }
+
+    .f_item .i_text_checkCode {
+        text-indent: 15px
+    }
+
+    .log-check-code {
+        left: 15px
+    }
+
+    label.f_forgot_pwd {
+        width: 80px;
+        padding-left: 10px
+    }
+
+    label.f_forgot_pwd a {
+        color: #777
+    }
+
+    input.i_text,input.i_text_checkCode {
+        width: 250px;
+        height: 40px;
+        border: #c9c9c9 1px solid;
+        padding-left: 5px;
+        line-height: 40px;
+        text-indent: 30px
+    }
+
+    input.i_text_checkCode {
+        width: 88px
+    }
+
+    a.checkcode-link {
+        width: 48px;
+        height: 24px;
+        color: #797979;
+        text-align: center;
+        line-height: 24px;
+        padding-right: 7px
+    }
+
+    img.checkCodeImg {
+        padding-left: 5px;
+        width: 68px;
+        height: 24px;
+        vertical-align: middle;
+        display: inline-block
+    }
+
+    input.i_text_error {
+        border: #e60065 1px solid
+    }
+
+    label.i_correct {
+        width: 30px;
+        height: 18px;
+        background: url(/img/l_090.jpg) no-repeat;
+        display: inline-block;
+        vertical-align: top
+    }
+
+    .f_explain,.f_explain_code {
+        padding-left: 20px;
+        background: url(/img/l_060.jpg) no-repeat left 5px
+    }
+
+    span.check_code {
+        display: inline-block
+    }
+
+    .i_btn_ok {
+        width: 257px;
+        height: 40px;
+        overflow: hidden;
+        color: #fff;
+        border: 0;
+        font: 15px/30px '微软雅黑';
+        text-align: center;
+        cursor: pointer;
+        background: #c9c9c9
+    }
+
+    input.i_btn_disabled {
+        width: 87px;
+        height: 30px;
+        overflow: hidden;
+        color: #000;
+        border: 0;
+        font: 16px/30px '微软雅黑';
+        text-align: center;
+        cursor: pointer
+    }
+
+    .user_info_r {
+        width: 320px;
+        height: auto;
+        float: left;
+        overflow: hidden;
+        text-align: left;
+        padding: 137px 0 0 34px
+    }
+
+    .user_info_r b {
+        height: 45px;
+        line-height: 45px
+    }
+
+    a.i_alink_r {
+        background: url(/img/l_070.jpg) no-repeat;
+        color: #fff;
+        border: 0;
+        font: 14px/30px '微软雅黑';
+        text-align: center;
+        display: inline-block;
+        width: 87px;
+        height: 30px
+    }
+
+    .fm_gray {
+        width: 980px;
+        height: 4px;
+        background: url(/img/l_010.jpg) no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        _bottom: -13px
+    }
+
+    a.i_findpsd {
+        color: #d2023c;
+        text-decoration: underline
+    }
+
+    dl.r_success {
+        width: 533px;
+        padding-left: 264px;
+        padding-top: 49px;
+        float: left;
+        overflow: hidden
+    }
+
+    dl.r_success dt {
+        padding-left: 59px;
+        float: left;
+        background: url(/img/l_10.jpg) no-repeat left top;
+        width: 457px;
+        padding-bottom: 40px
+    }
+
+    dl.r_success dt b {
+        font: 25px/30px '微软雅黑';
+        color: #e50163;
+        height: 30px;
+        width: 100%
+    }
+
+    dl.r_success dt span {
+        width: 100%;
+        float: left;
+        padding: 10px 0
+    }
+
+    dl.r_success dt span font {
+        color: #d4003b;
+        font-size: 30px;
+        font-family: 'arial'
+    }
+
+    a.i_btn_go {
+        width: 118px;
+        height: 33px;
+        background: url(/img/l_110.jpg) no-repeat;
+        font: 20px/30px '微软雅黑';
+        text-align: center;
+        display: block;
+        color: #fff
+    }
+
+    dl.r_success dd {
+        float: left;
+        width: 533px;
+        padding: 10px 0;
+        border-top: #ccc 1px dashed;
+        color: #777
+    }
+
+    a.i_info {
+        color: #d50038;
+        text-decoration: underline
+    }
+
+    span.check_email,span.check_phone {
+        width: 285px;
+        padding-left: 46px;
+        float: left;
+        display: block;
+        background: url(/img/l_120.jpg) no-repeat left 5px;
+        height: 50px
+    }
+
+    span.check_phone {
+        width: 150px;
+        background: url(/img/l_130.jpg) no-repeat left top;
+        padding-left: 33px
+    }
+
+    dl.r_success dd.nobt {
+        border-top: 0
+    }
+
+    dl.r_success dd.f_help {
+        background: url(/img/l_140.jpg) no-repeat left 28px;
+        padding-left: 72px;
+        line-height: 52px;
+        text-decoration: underline;
+        height: 52px
+    }
+
+    dl.r_success dd.f_help a {
+        padding: 0 5px 0 6px
+    }
+
+    span.ad_pic {
+        padding-top: 33px;
+        display: inline-block
+    }
+
+    span.loginmsg {
+        float: left;
+        overflow: hidden;
+        width: 253px;
+        border: 1px solid #eb1764;
+        color: #eb1764;
+        margin-left: -73px;
+        padding: 5px 5px 5px 60px
+    }
+
+    .deal {
+        width: 540px;
+        height: 106px;
+        padding: 5px;
+        overflow-y: scroll;
+        border: 1px solid #c9c9c9;
+        font-size: 12px;
+        font-family: '宋体';
+        color: #666;
+        line-height: 20px;
+        float: left;
+        margin-left: 15px
+    }
+
+    .deal b {
+        display: block;
+        width: 510px;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #000
+    }
+
+    .deal p.on {
+        text-indent: 2em
+    }
+
+    .deal strong {
+        font-size: 12px;
+        display: block;
+        padding: 10px 0
+    }
+
+    .deal font {
+        font-weight: bold
+    }
+
+    .deal i {
+        font-weight: bold
+    }
+
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #000
+}
+.deal p.on {
+    text-indent: 2em
+}
+.deal strong {
+    font-size: 12px;
+    display: block;
+    padding: 10px 0
+}
+.deal font {
+    font-weight: bold
+}
+.deal i {
+    font-weight: bold
+}
+.r_success .i_btn_mbs {
+    width: 257px;
+    height: 40px;
+    overflow: hidden;
+    color: #fff;
+    border: 0;
+    font: 15px/30px '微软雅黑';
+    text-align: center;
+    cursor: pointer;
+    background: #c9c9c9;
+    display: block;
+    line-height: 40px
+}
+.agree-btn {
+    width: 250px;
+    line-height: 40px;
+    font: normal 14px/40px "微软雅黑";
+    color: #fff;
+    text-align: center;
+    background: #e30164;
+    margin: 10px auto;
+    cursor: pointer
+}
+.pt52 {
+    height: 23px;
+    position: absolute;
+    top: 4px;
+	left: 36px;
+    line-height: 21px;
+}
+.login-img01 {
+    padding-left: 87px
+}
+.i-label {
+    position: absolute;
+    top: 8px;
+	left: 3px;
+}
+.login-header .login-t {
+    margin-left: 216px;
+}
+
+.code-line {
+    height: 77px;
+    width: 322px;
+    margin-left: 2px;
+	border-radius: 4px;
+	padding-bottom: 15px;
+}
+
+.checkcode-link {
+    position: relative;
+    top: 0;
+    left: 80%;
+    color: #999
+}
+.forget-pwd {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    color: #666;
+}
+.code-line-content{
+	margin-left: 2px;
+	height: 77px;
+}
+.login_reg {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	color: #e50065;
+}
+a.login_reg:hover {
+	color: #e50065;
+	text-decoration: underline;
+}
+.login_bor_1 {
+	width: 55px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    display: inline-block;
+    top: 36px;
+    left: 71px;
+}
+.login_bor_2 {
+	width: 72px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    display: inline-block;
+    top: 36px;
+    left: 62px;
+	display: none;
+}
+.f_item_code {
+	width: 365px;
+    overflow: hidden;
+    height: 103px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+/* 20160122 */
+.chect_code_img {
+	width: 322px;
+	height: 77px;
+	border: none;
+	padding: 1px;
+}
+.chect_image {width: 75px;height: 75px;margin: 2.7px;cursor: pointer;display: inline-block;float: left;background-repeat:no-repeat;}
+.s0{background-position: 0px 0px;}
+.s1{background-position: -75px 0px;}
+.s2{background-position: -150px 0px;}
+.s3{background-position: -225px 0px;}
+.getDpwd {border: none;width:132px;height: 42px;line-height: 42px;text-align: center;color: #fff;background: #ff9cb1;position: absolute;top: 0;left:195px;border-radius: 4px;cursor: pointer;}
+.login-header span {cursor: pointer; }
+.reg_btn {margin-top:10px;overflow: auto;}
+
+.General{position: absolute;left: 194px;top: 22px;border: 1px solid #c9c9c9;border-radius: 4px;height: 40px;width:130px;}
+.General img{height: 39px;width: 97%;    position: relative;
+    left: 2px;}
+.Color{position: absolute;left: 37%;top: 23px;width: 53%;height: 40px;}
+#member_login_CodeTip, #member_reg_CodeTip {
+    position: absolute;
+    left: 0;
+	top: 62px;
+}
+.checkcode-notice {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 6px;
+	color: #b3b3b3;
+}
+input[type="password"] {
+	font-size: 12px;
+	font-weight: 400;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		
+		<script type="text/javascript" src="../jquery-1.12.0.js" ></script>
+		
+	</head>
+	<body>
+     <div class="head">
+       
+            
+            <p><img alt="" src="../images/login2.jpg"></p> 
+
+     
+    </div>
+    
+    
+    <div class="main">
+        
+    <div class="user_info">
+        <div class="user_info_l">
+                
+                <p><a><img src="../images/login3.jpg" alt=""></a></p> 
+
+        </div>
+        <div class="user_info_r" id="ulUserLogin">
+            <div class="login-header">
+                <span class="login-txt login_active">普通登录<span class="login_bor_1"></span></span>
+                <span class="login-txt_2">无密码登录<span class="login_bor_2"></span></span>
+            </div>
+            <div class="form_style">
+            <form method="post" id="form">
+                <input name="login" type="hidden" >
+                <input type="hidden" name="isVerify" id="isVerify" value="0">
+                <input type="hidden" name="token" id="token" >
+                <input type="hidden" name="method" id="method" value="3">
+                <div class="f_item pt52" style="display:none" id="loginMsg"></div>
+                
+                <!-- 普通登录 start -->
+                <div class="input_block_1">
+                    <div class="f_item J_item">
+                        <label class="i_label name-label" for="txtLoginID"></label>
+                        <input type="text" tabindex="1" name="txtLoginID" title="请输入帐号" id="txtLoginID" class="i_text" value="" placeholder="手机号/邮箱/会员卡号">
+                        <label id="txtLoginIDCorrent"></label>
+                        <div id="txtLoginIDTip"></div>
+                    </div>
+                    <div class="f_item J_item">
+                        <label class="i_label pwd-label" for="txtLoginPwd"></label>
+                        <input type="password" tabindex="-1" name="txtLoginPwd" title="请输入密码" id="txtLoginPwd" class="i_text" placeholder="密码">
+                        <label id="txtLoginPwdCorrent"></label>
+                        <div id="txtLoginPwdTip"></div>
+                    </div>
+                </div>
+                <div class="input_block_2" style="display:none;">
+                    <div class="f_item J_item">
+                        <label class="i_label name-label" for="txtLoginID"></label>
+                        <input type="text" tabindex="1" name="txtLoginMob" title="请输入帐号" id="txtLoginMob" class="i_text" value="" placeholder="输入手机号">
+                        <label id="txtLoginMobCorrent"></label>
+                        <div id="txtLoginMobTip"></div>
+                    </div>
+                </div>
+                <div class="f_item_code J_code_item" id="securityCode" style="display:none;">
+                    <span class="checkcode-notice">点击下方图片，转到正确方向</span>
+                    <span class="checkcode-link" style="cursor:pointer" id="aLoginChgVCode">换一张</span>
+                    <div class="code-line-content">
+                        <div class="code-line">
+                            <input type="text" style="display:none"  id="member_login_Code" class="i_text_checkCode" placeholder="验证码">
+                            <input type="hidden" name="member_login_key" id="member_login_key" value="">
+                            <div id="container"></div>
+                        </div>
+                    </div>
+                    <div id="member_login_CodeTip"></div>
+                </div>
+                
+                <!-- 普通登录 end-->
+
+                <!-- 动态口令start -->
+                
+                <div class="input_block_2" style="display:none;">
+                    <div class="f_item J_item">
+                        <label class="i_label pwd-label" for="txtLoginDpwd"></label>
+                        <input type="text" tabindex="2" name="member_mobile_Code" title="请输入动态口令" id="member_mobile_Code" class="i_text" placeholder="动态口令" style="width:180px;">
+                        <label id="txtLoginDpwdCorrent"></label>
+                        <div id="txtLoginDpwdTip"></div>
+                        <input type="button" value="获取手机动态口令" class="getDpwd" id="get_dynPwd" data-time="60">
+                    </div>
+                </div>
+                <!-- 动态口令end -->
+                 <div class="f_item pt12">
+                    <a href="#" target="_parent" class="forget-pwd">忘记密码？</a>
+                    <a href="#" class="login_reg">注册</a>
+                    <div class="login-line">
+                        <input type="button" name="btnLogin" id="btnLogin" class="i_btn_ok" value="立即登录">
+                        <input type="button" name="btnLogin" id="btnSmsLogin" style="display:none;" class="i_btn_ok" value="立即登录">
+                    </div>
+                </div>
+                <div class="f_item pt30">
+                    <span class="i_label i-label">其他登录方式：</span>
+                    <a title="微信登录" href="#" class="login-img01" target="_parent">
+                        <img alt="" src="../images/wx.jpg" width="39" height="39">
+                    </a>
+                    <a title="QQ登录" href="#" class="login-img02" target="_parent">
+                        <img alt="" src="../images/qqlogo0.jpg" width="39" height="39">
+                    </a>
+                    <a title="支付宝登陆" href="#" class="login-img02" target="_parent">
+                         <img alt="" src="../images/l_050.jpg" width="39" height="39">
+                    </a>
+                    <a title="微博登录" href="#" class="login-img02" target="_parent">
+                        <img alt="" src="../images/weibologin0.jpg" width="39" height="39">
+                    </a>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    <div class="foot">
+        <div class="footer">
+            <a href="#" rel="nofollow" title="女性内衣专家梦芭莎首页">首页</a> 
+            <a href="#" rel="nofollow">公司简介</a> 
+            <a href="#" title="梦芭莎">旗下品牌</a> 
+            <a href="#" rel="nofollow">零售店址</a> 
+            <a href="#" title="梦芭莎网站联盟">梦芭莎网盟</a> 
+            <a href="#">网店代理</a> 
+            <a href="#" target="_blank" title="梦芭莎网店代理">网站地图</a> 
+            <a href="#">友情链接</a> 
+            <a href="#" title="梦芭莎评论">加入我们</a> 
+            <br>
+            Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公司 All Rights Reserved 粤B2-20080069号
+        </div>
+    </div>
+
+
+</body>
+</html>
