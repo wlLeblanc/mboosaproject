@@ -64,7 +64,7 @@
 				var a=0;
 				function  imgChange(){
 					 
-					
+					//
 					$('.banner-img img').eq(a).stop(true).show().siblings().hide();
 					$li.eq(a).addClass('hov').siblings().removeClass('hov');
 					
@@ -140,7 +140,6 @@
 				//第三部分
 				var j=0;
 				function  qiehuan(){
-
 					$('.ms_new_img img').eq(j).stop(true).show().siblings().hide();
 			
 				}
@@ -154,30 +153,22 @@
 					 qiehuan();
 				})
 				
-				//tab切换部分
-				$('.c-nav span')
-			
-	            // 1)隐藏除第一个以外的所有.content
-	            $('.content').hide().eq(0).show();
-	
-	            // 2)高亮显示第一个tab标签
-	            $('.c-nav span').eq(0);
+				//优品切换部分
+				$('.c-nav span');
 	
 	            // 3）点击标签，切换相应的内容
 	            $('.c-nav span').on('mouseenter',function(){
-	              
+	                //获取当前移入的box索引值
 	                var idx = $(this).index();
+	                //显示相应的图片 
 	                $('.content').hide().eq(idx).show();
-	
+					//将对应的背景切换
 	                $('.c-nav span').eq(idx).css('background','url(img/c-navh0'+idx+'.jpg)');
 	                
 	            });
-
+					//鼠标移开时背景变为初始的样子
 				  $('.c-nav span').on('mouseleave',function(){
-	              
-	                var idx = $(this).index();
-	                $('.content').hide().eq(idx).show();
-	
+	            
 	                $('.c_li1').css('background','url(img/c-navy00.jpg)');
 	                $('.c_li2').css('background','url(img/c-navy01.jpg)');
 	                 $('.c_li3').css('background','url(img/c-navy02.jpg)');
