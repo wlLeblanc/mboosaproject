@@ -6,131 +6,26 @@
 		<link rel="stylesheet" href='css/reset.css'/>
 		<link rel="stylesheet" href="css/index.css" />
 		<script type="text/javascript" src="assets/jquery-1.12.0.js" ></script>
-		<script>
-			
-            $(function () {
-                $(".wli").on('mouseover',function () {
-	                  $('.weix').show();
-	                });
-	                  $(".wli").on('mouseout',function () {
-	                  $('.weix').hide();
-	                });
-	                  $(".weibo").on('mouseover',function () {
-	                  $('.weibo_img').show();
-	                });
-	                  $(".weibo").on('mouseout',function () {
-	                  $('.weibo_img').hide();
-	                });
-	                  $(".shouji").on('mouseover',function () {
-	                  $('.shouji_img').show();
-	                });
-	                  $(".shouji").on('mouseout',function () {
-	                  $('.shouji_img').hide();
-                });
-                //轮播图部分
-                var $li=$('.list li')
-				
-				var a=0;
-				function  imgChange(){
-					 
-					
-					$('.banner-img img').eq(a).stop(true).show().siblings().hide();
-					$li.eq(a).addClass('hov').siblings().removeClass('hov');
-					
-				}
-				$li.on('click',function(e){
-					
-					a =$(this).index();
-					imgChange();
-					e.stopPropagation(); 
-					clearInterval(timer);
-				});
-			
-				function auto(){
-					timer =	setInterval(function(){
-						(a<6)?a++:a=0;
-						imgChange();	
-					},3000)
-				};
-				auto();
-				
-				$('.banner-img').on('mouseover',function(){
-					clearInterval(timer);
-					
-				});
-			
-				$('.banner-img').on('mouseout',function(){
-					auto();
-				});
-				//第二个轮播图
-				var $imgli=$('.img2list li')
-				
-				var i=0;
-				function  Change(){
-					 
-					
-					$('.bannerimg2 img').eq(i).stop(true).show().siblings().hide();
-					$imgli.eq(i).addClass('hov').siblings().removeClass('hov');
-					$('.tab-titile li').eq(i).addClass('tabc').siblings().removeClass('tabc');
-					
-				}
-				$imgli.on('click',function(e){
-					
-					i =$(this).index();
-					 Change();
-					e.stopPropagation(); 
-					clearInterval(t);
-				});
-			
-				function lun(){
-					t =	setInterval(function(){
-						(i<5)? i++ : i=0;
-						Change();	
-					},3000)
-				};
-				lun();
-				
-				$('.bannerimg2').on('mouseover',function(){
-					clearInterval(t);
-					
-				});
-			
-				$('.bannerimg2').on('mouseout',function(){
-					lun();
-				});
-				$('.next').on('click',function(){
-					(i<6)?i++:(i=0);
-					 Change();
-				})
-				$('.prev').on('click',function(){
-					(i>0)?i--:(i=6);
-					 Change();
-				})
-				//第三部分
-				var j=0;
-				function  qiehuan(){
-
-					$('.ms_new_img img').eq(j).stop(true).show().siblings().hide();
-			
-				}
-				$('.ms_next').on('click',function(){
-					console.log('hhh');
-					(j<6)?j++:(j=0);
-					 qiehuan();
-				})
-				$('.ms_prev').on('click',function(){
-					(j>0)?j--:(j=6);
-					 qiehuan();
-				})
-				//tab切换部分
-				
-			
-            });
-                
-		</script>
+		<script type="text/javascript" src="js/index.js" ></script>
 	</head>
 	<body>
-		
+		<!--
+        	楼梯部分
+        -->
+        <div id="nav">
+			<ul>
+				<li class="hover">原装美货 </li>
+				<li>每周新品 </li>
+				<li>热销单品 </li>
+				<li>精选活动 </li>
+				<li>优选大牌 </li>
+				<li>-内衣- </li>
+				<li>-女装-</li>
+				<li>-男装-</li>
+				<li>-美妆- </li>
+				<li>-饰品- </li>
+			</ul>
+		</div>
 		<!--头部-->
 		
 		<div class="top">
@@ -315,7 +210,7 @@
 				</div>
 			</div>
 			<div class="ms_hot_title"  style=" margin-top: 10px;"><img src="img/ling_01.png"></div>
-			<div class="tab" style="width: 1200px ;margin: 0 auto;">
+			<div class="tab ms_list" style="width: 1200px ;margin: 0 auto;">
 				<div class="tab-titile">
 					<ul>
 						<li class="tabc"><span>欧美时尚</span></li>
@@ -362,7 +257,7 @@
 			</div>
 		</div>
 		<!--每周新品-->
-		<div class="ms_new" style="margin: 0 auto;">
+		<div class="ms_new  ms_list" style="margin: 0 auto;">
 			<div class="ms_new_day"><img src="img/MS_01.png"></div>
 			<div class="ms_new_img">
 				
