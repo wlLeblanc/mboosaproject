@@ -102,10 +102,12 @@ font-size:8px; text-align: center;line-height: 16px;  }
 	line-height: 50px;
 	border-bottom: 1px solid #414141;
 }
-.buygoods li span{ margin-left: 350px; width: 200px;}
-.buygoods li i{ margin-left: 100px; width: 200px;}
-.buygoods li em{ margin-left: 150px; width: 100px;}
-.buygoods li a{ margin-left: 100px; width: 200px;}
+.buygoods li span{ margin-left: 200px; width: 200px;}
+.buygoods li i{ display: inline-block;margin-left: 130px; width: 10px;}
+.buygoods li h6{ display: inline-block; margin-left: 10px; width: 400px;}
+.buygoods li em{ display: inline-block;margin-left: 120px; width: 20px; color: #F12779; }
+.buygoods li a{ display: inline-block;margin-left: 80px; width: 30px;}
+.buygoods li img{  width: 30px; height: 40px; vertical-align: middle;}
 
 .shangjia {
     margin-right: 5px;

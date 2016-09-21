@@ -5,101 +5,11 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/cart.css" />
 		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
 		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
 		<script type="text/javascript" src="../js/index.js" ></script>
 		<script type="text/javascript" src="../js/mycookie.js" ></script>
-		<script>
-var str = '[{product:"\u516C\u4E3B\u9774\u5B50", price:"RMB138",num:"1",img:"../images/xq_xiao_02.jpg"}, {product:"\u8776\u5986\u6D77\u84DD\u6E05\u6EE2\u7C89\u5E95\u6DB210", price:"RMB85",num:"1",img:"../images/xq_xiao_02.jpg"}]';
-
-
-// 将字符串重新执行，那么可以得到原来的数组
-//   因为可能存在安全问题
-//var arr = eval(str);
-
-// alert(arr.length)
-
-
-
-
-onload = function() {
-
-	
-
-
-	var oUl = document.getElementById("plist");
-
-	var str = getCookie("arr");
-
-	// var a = "[{}]"
-	// string
-	//alert(typeof str);
-
-	var arr = eval(str);
-
-	for (var i = 0; i < arr.length; i++)
-	{
-		// 创建一个商品
-		var oLi = document.createElement("li");
-		//详细信息
-		var oSpan=document.createElement('span');
-		//合计金额
-		var oHj=document.createElement('em');
-		//数量
-		var oi=document.createElement('i');
-		//创建移除按钮
-		var oA=document.createElement('a');
-		//图片
-		var oDiv=document.createElement('img');
-
-		// 取出数组中元素，arr[i] 是一个对象,
-		//    再取出这个对象中的产品名 和 价格
-		oA.innerHTML="移除"
-		oDiv.src=arr[i].img
-		oi.innerHTML=arr[i].num;
-		oSpan.innerHTML=arr[i].price;
-		oLi.innerHTML = arr[i].product;
-		oHj.innerHTML=(arr[i].num)*(arr[i].price)
-		//oLi.className("hov");
-		oLi.appendChild(oDiv);
-		oLi.appendChild(oSpan);
-		oLi.appendChild(oi);
-		oLi.appendChild(oHj);
-		oLi.appendChild(oA);
-		
-		oUl.appendChild(oLi);
-		
-	}
-
-
-
-	/*
-	// 从 cookie 中，取出添加的商品
-	var product = getCookie("product");
-
-	// 取出cookie中添加的商品价格
-	var price = getCookie("price");
-	
-		
-
-	var oUl = document.getElementById("plist");
-
-	// 创建一个商品
-	
-	var oLi = document.createElement("li");
-
-	oLi.innerHTML = product + ", " + price;
-
-	oUl.appendChild(oLi);
-
-	//*/
-	$('a').on('click',function(){
-		$(this).parent().remove();
-	})
-}
-$(function(){
-	
-})
-		</script>
+		<script type="text/javascript" src="../js/cart.js" ></script>
 	</head>
 	<body>
 
@@ -165,7 +75,116 @@ $(function(){
 		        </div>
 			</div>
 			
+		<div class="footer">
+			<div class="m_info" >
+			
+				<ul>
+				    <li class="lititle"><a target="_blank" href="#">新手指南</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#" >注册新用户</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">如何修改订单</a></li>
+				    <li><a target="_blank" href="#" >尺码对照表</a></li>
+				</ul>
+				<ul>
+				    <li class="lititle"><a target="_blank" href="#">支付方式</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">支付方式</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">账户提现及退款时效</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">查看帐户余额</a></li>
+				</ul>
+				<ul>
+				    <li class="lititle"><a target="_blank" href="#">配送方式</a></li>
+				    <li><a target="_blank"  href="#">配送费收取标准</a></li>
+				    <li><a target="_blank"  href="#">配送范围及配送时效</a></li>
+				    <li><a target="_blank"  href="#">签收注意事项</a></li>
+				    <li><a target="_blank" href="#">海外订购</a></li>
+				</ul>
+				<ul>
+				    <li class="lititle"><a target="_blank" href="#">退换货服务</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">退换货政策</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">退换货流程</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">隐私申明</a></li>
+				</ul>
+				<ul>
+				    <li class="lititle"><a target="_blank" href="#">会员制度及优惠</a></li>
+				    <li><a rel="nofollow" target="_blank" href="#">优惠活动</a></li>
+				    <li><a target="_blank" rel="nofollow" href="#">VIP优惠尊享</a></li>
+				    <li><a target="_blank" href="#">大宗购物</a></li>
+				    <li><a target="_blank" href="#">积分制度</a></li>
+				</ul>
+				<ul>
+				    <li class="lititle"><a target="_blank" href="#">帮助中心</a></li>
+				    <li><a rel="nofollow" target="_blank" href="#">忘记密码</a></li>
+				    <li><a rel="nofollow" target="_blank" href="#">常见问题</a></li>
+				    <li><a rel="nofollow" target="_blank" href="#">在线客服</a></li>
+				    <li><a rel="nofollow" target="_blank" href="#">联系我们</a></li>
+				</ul>
+				<ul>
+				    <li class="lititle"><a rel="nofollow" target="_blank" href="#">咨询订购</a></li>
+				    <li><font>400-716-2828</font></li>
+				    <li class="lititle"><a rel="nofollow" target="_blank" href="#">客户服务</a></li>
+				    <li><font>400-716-7878</font></li>
+				</ul>
+				<ul>
+				    <li style="padding-top:8px;"><img alt="" src="../img/weim_01.png"></li>
+				</ul>
 		
+			</div>
+		
+		</div>	
+		<div class="f_mbs_info" style="width:900px;">
+			<ul>
+				<li><img src="../img/mbs_img_1.jpg"/></li>
+				<li><img src="../img/mbs_img_2.jpg"/></li>
+				<li><img src="../img/mbs_img_3.jpg"/></li>
+				<li><img src="../img/mbs_img_4.jpg"/></li>
+			</ul>
+		</div>
+		<div style="width:980px;margin:auto;position:relative;" class="copy_text" pos="11/3/1">
+			<a  href="/">首页</a>
+			<a  href="#">公司简介</a> 
+			<a id="qxpp"  href="#">旗下品牌</a> 
+			<a href="#">零售店址</a> 
+			<a  href="#">梦芭莎网盟</a> 
+			<a  href="#">网店代理</a> 
+			<a  href="#">网站地图</a> 
+			<a  href="#">友情链接</a><br>
+			Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公司 All Rights Reserved 粤B2-20080069号 公安机关备案号44010302000075
+			<div class="qxpp" style="display: none;">
+				<a  href="#">梦芭莎</a>
+				<a  href="#">若缇诗</a>
+				<a  href="#">蒙蒂埃莫</a>
+				<a  href="#">宝耶</a>
+				<a  href="#">ing2ing</a>
+				<a  href="#">所然</a>
+				<a  href="#">千金本草</a>
+				<a  href="#">樱桃派内衣</a>
+				<a  href="#">运动0100</a>
+				<a  href="#">韩伊儿</a>
+				<a  href="#">艾莱维</a>
+				<a  href="#">梦芭莎女装</a>
+				<a  href="#">梦芭莎内衣</a>
+				<a  href="#">梦芭莎女鞋</a>
+				<a  href="#">梦芭莎高端内衣</a>
+				<a  href="#">梦芭莎饰品</a>
+				<a  href="#">梦芭莎活动</a>
+				<a  href="#">梦芭莎评论</a>
+				<a  href="#">梦芭莎图片</a>
+				<a  href="#">梦芭莎俱乐部</a>
+				<a href="#">梦芭莎标签</a>
+			</div>
+		</div>
+		<div class="bottom">
+			<ul>
+				<li><img src="../img/mbs_f_01.jpg"></li>
+				<li><img src="../img/mbs_f_02.jpg"></li>
+				<li><img src="../img/mbs_f_01.jpg"></li>
+				<li><img src="../img/mbs_f_03.jpg"/></li>
+				<li><img src="../img/mbs_f_04.jpg"/></li>
+				<li><img src="../img/mbs_f_05.jpg"/></li>
+				<li><img src="../img/mbs_f_06.jpg"/></li>
+			
+			</ul>
+		</div>
+   
 	
 	</body>
 </html>
