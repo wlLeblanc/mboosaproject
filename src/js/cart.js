@@ -57,8 +57,10 @@ onload = function() {
 		$(this).parent().remove();
 	})
 	$('li').each(function(idx ,item){
-		var $i=$(this).$('i').html()
-		$('.pics').html("$i")
+		
+		var $i=parseInt($(this).find('i').html())
+		    $i += $i;
+		$('.pics').html($i)
 		
 	})
 }
