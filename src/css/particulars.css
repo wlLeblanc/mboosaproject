@@ -276,7 +276,8 @@
 	 height: 34px;
 
 }
-.size .num .num_center span{
+.size .num input{
+margin-left: 20px;
  width: 55px;
 height: 32px;
 float: left;

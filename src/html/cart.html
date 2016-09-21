@@ -5,6 +5,72 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/cart.css" />
 		<link rel="stylesheet" href="../css/reset.css" />
+		<script type="text/javascript" src="../js/index.js" ></script>
+		<script type="text/javascript" src="../js/mycookie.js" ></script>
+		<script>
+			var str = '[{product:"\u516C\u4E3B\u9774\u5B50", price:"RMB138"}, {product:"\u8776\u5986\u6D77\u84DD\u6E05\u6EE2\u7C89\u5E95\u6DB210", price:"RMB85"}]';
+
+
+// 将字符串重新执行，那么可以得到原来的数组
+//   因为可能存在安全问题
+//var arr = eval(str);
+
+// alert(arr.length)
+
+
+
+
+onload = function() {
+
+	
+
+
+	var oUl = document.getElementById("plist");
+
+	var str = getCookie("arr");
+
+	// var a = "[{}]"
+	// string
+	//alert(typeof str);
+
+	var arr = eval(str);
+
+	for (var i = 0; i < arr.length; i++)
+	{
+		// 创建一个商品
+		var oLi = document.createElement("li");
+
+		// 取出数组中元素，arr[i] 是一个对象,
+		//    再取出这个对象中的产品名 和 价格
+		oLi.innerHTML = arr[i].product + ", " + arr[i].price;
+
+		oUl.appendChild(oLi);
+	}
+
+
+
+	/*
+	// 从 cookie 中，取出添加的商品
+	var product = getCookie("product");
+
+	// 取出cookie中添加的商品价格
+	var price = getCookie("price");
+	
+		
+
+	var oUl = document.getElementById("plist");
+
+	// 创建一个商品
+	
+	var oLi = document.createElement("li");
+
+	oLi.innerHTML = product + ", " + price;
+
+	oUl.appendChild(oLi);
+
+	//*/
+}
+		</script>
 	</head>
 	<body>
 
@@ -12,7 +78,7 @@
 				<div class="top_l">
 					<div class="loginmax-reg" style="position: relative; width: 1200px; margin: 0 auto;">
 						<ul class="register">
-							<li><a href="html/login.html">登录</a></li>
+							<li><a href="login.html">登录</a></li>
 							<li><a>注册</a></li>
 							<li class="wli"><a>微信</a></li>
 							<li class="weibo"><a>微博</a></li>
@@ -30,6 +96,44 @@
 				</div>
 				<div class="stepby">
                 </div>
+			</div>
+			<div class="list_show">
+				<div class="title">
+            <!--商品列表title-->
+		            <dl class="top">
+		                <dt><input id="chkall" checked="checked" name="" type="checkbox"></dt>
+		                <dd class="qb">全部</dd>
+		                <dd class="sp">商品</dd>
+		                <dd class="dj">单价</dd>
+		                <dd class="sl">数量</dd>
+		                <dd class="jexj">金额小计</dd>
+		                <dd class="cz">操作</dd>
+		            </dl>
+		        </div>
+		        <div class="buygoods">
+		        	<div class="title"> 
+		        		<span class="shangjia">以下商品由 梦芭莎 发货</span>
+		        		<span class="yunfei">免配送费</span>
+		        	</div>
+		        	<ul id="plist">
+		        		<li></li>
+		        	</ul>
+		        	
+		        </div>
+		        <div class="paym" id="J_order_line">            
+		        	<div class="cleargoods">                            
+		        	</div>            
+		        	<div class="goodsmoney">                
+		        		<div class="zs">商品数量总计：<span class="pics">1件</span> <span class="zj"> 折后商品金额总计</span>: <span class="rmb">￥ </span><span class="howmuch">139.00</span></div>            
+		        	</div>           
+		        	<div class="moreorpay clearfix">               
+		        		<div class="fl">                                                                                       
+		        			
+		        		<div class="fr">                                        
+		        			
+		        			
+		        	</div>       
+		        </div>
 			</div>
 			
 		
