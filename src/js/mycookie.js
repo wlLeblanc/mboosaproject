@@ -9,7 +9,7 @@ function addCookie(name, val, day)
 {
 	var oDate = new Date();
 
-	oDate.setDate(oDate.getDate() + day);
+	oDate.setDate(oDate.getMinutes() + day);
 	
 	document.cookie = ""+name+"="+val+";expires=" + oDate;
 }

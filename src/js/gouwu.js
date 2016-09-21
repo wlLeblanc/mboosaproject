@@ -21,7 +21,8 @@ onload = function() {
 
 			// 这个商品的信息
 			var oProduct =document.getElementById("product")
-			
+			var oNum=document.getElementById("numb")
+			var oImg=document.getElementById("oimg")
 			
 			// 取出商品名字的标签对象
 			var oSpan = oProduct.getElementsByTagName("span")[0];
@@ -34,9 +35,11 @@ onload = function() {
 			
 			// 转换成一个
 			// var str = encodeURI(oSpan.innerHTML);
-
+			
 			var obj = {};
-
+			obj.img=oImg.src;
+			console.log(oImg.src);
+			obj.num=oNum.value;
 			obj.product = oProduct.innerHTML;
 			obj.price = oPrice.innerHTML;
 
