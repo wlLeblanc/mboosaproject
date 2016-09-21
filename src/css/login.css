@@ -681,13 +681,6 @@ span.loginmsg {
         overflow: hidden
     }
 
-    dl.r_success dt {
-        padding-left: 59px;
-        float: left;
-        background: url(/img/l_10.jpg) no-repeat left top;
-        width: 457px;
-        padding-bottom: 40px
-    }
 
     dl.r_success dt b {
         font: 25px/30px '微软雅黑';
@@ -708,16 +701,7 @@ span.loginmsg {
         font-family: 'arial'
     }
 
-    a.i_btn_go {
-        width: 118px;
-        height: 33px;
-        background: url(/img/l_110.jpg) no-repeat;
-        font: 20px/30px '微软雅黑';
-        text-align: center;
-        display: block;
-        color: #fff
-    }
-
+   
     dl.r_success dd {
         float: left;
         width: 533px;
@@ -731,32 +715,14 @@ span.loginmsg {
         text-decoration: underline
     }
 
-    span.check_email,span.check_phone {
-        width: 285px;
-        padding-left: 46px;
-        float: left;
-        display: block;
-        background: url(/img/l_120.jpg) no-repeat left 5px;
-        height: 50px
-    }
+  
 
-    span.check_phone {
-        width: 150px;
-        background: url(/img/l_130.jpg) no-repeat left top;
-        padding-left: 33px
-    }
 
     dl.r_success dd.nobt {
         border-top: 0
     }
 
-    dl.r_success dd.f_help {
-        background: url(/img/l_140.jpg) no-repeat left 28px;
-        padding-left: 72px;
-        line-height: 52px;
-        text-decoration: underline;
-        height: 52px
-    }
+   
 
     dl.r_success dd.f_help a {
         padding: 0 5px 0 6px
@@ -946,31 +912,7 @@ a.login_reg:hover {
 	border: none;
 	padding: 1px;
 }
-.chect_image {width: 75px;height: 75px;margin: 2.7px;cursor: pointer;display: inline-block;float: left;background-repeat:no-repeat;}
-.s0{background-position: 0px 0px;}
-.s1{background-position: -75px 0px;}
-.s2{background-position: -150px 0px;}
-.s3{background-position: -225px 0px;}
-.getDpwd {border: none;width:132px;height: 42px;line-height: 42px;text-align: center;color: #fff;background: #ff9cb1;position: absolute;top: 0;left:195px;border-radius: 4px;cursor: pointer;}
-.login-header span {cursor: pointer; }
-.reg_btn {margin-top:10px;overflow: auto;}
 
-.General{position: absolute;left: 194px;top: 22px;border: 1px solid #c9c9c9;border-radius: 4px;height: 40px;width:130px;}
-.General img{height: 39px;width: 97%;    position: relative;
-    left: 2px;}
-.Color{position: absolute;left: 37%;top: 23px;width: 53%;height: 40px;}
-#member_login_CodeTip, #member_reg_CodeTip {
-    position: absolute;
-    left: 0;
-	top: 62px;
-}
-.checkcode-notice {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 6px;
-	color: #b3b3b3;
-}
 input[type="password"] {
 	font-size: 12px;
 	font-weight: 400;

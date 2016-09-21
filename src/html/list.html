@@ -762,6 +762,40 @@
                 </dl>
 			</div>
 		</div>
-		<div class="list_show"></div>
+		<div class="list_show">
+			<!-- <ul><li><img src="../img/list1.jpg"/></li></ul>-->
+		</div>
+			<script>
+			$(function(){
+				var box=$('.list_show');
+				$.ajax({
+					type:"get",
+					url:"../data/list.json",
+					async:true,
+					success:function(res){
+						console.log(res);
+						var ul = $('<ul/>');
+						$.each(res, function(idx,obj) {    
+							var li=$('<li/>');
+							var $dl=$('<dl/>');
+							var $dt=$('<dt/>');
+							var $dd=$('<dd/>')
+							var $img=$('<img/>');
+							$dl.appendTo(li)
+							$dt.appendTo($dl)
+							$dd.appendTo($dl)
+							$img.attr('src',obj.img).css('width',230)
+							$dd.html(obj.title)
+							$img.appendTo($dt)
+							
+							li.appendTo(ul);
+							
+
+						});
+						ul.appendTo(box);
+					}
+				});
+			})
+		</script>
 	</body>
 </html>

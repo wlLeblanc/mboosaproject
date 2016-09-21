@@ -5,9 +5,10 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/header.css" />
 		<link rel="stylesheet" href="../css/login.css" />
-		<script type="text/javascript" src="../js/index.js" ></script>
+		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../js/login.js" ></script>
+		<link rel="stylesheet" href="../css/all.css" />
 		
-		<script type="text/javascript" src="../jquery-1.12.0.js" ></script>
 		
 	</head>
 	<body>
@@ -30,31 +31,39 @@
         </div>
         <div class="user_info_r" id="ulUserLogin">
             <div class="login-header">
-                <span class="login-txt login_active">普通登录<span class="login_bor_1"></span></span>
+                <span class="login-txt login_active">普通登录<span class="login_bor_1">
+                	
+                </span></span>
                 <span class="login-txt_2">无密码登录<span class="login_bor_2"></span></span>
             </div>
             <div class="form_style">
             <form method="post" id="form">
                 <input name="login" type="hidden" >
-                <input type="hidden" name="isVerify" id="isVerify" value="0">
-                <input type="hidden" name="token" id="token" >
-                <input type="hidden" name="method" id="method" value="3">
+                <input type="hidden" id="isVerify" >
+                <input type="hidden" id="token" >
+                <input type="hidden" id="method" >
                 <div class="f_item pt52" style="display:none" id="loginMsg"></div>
                 
-                <!-- 普通登录 start -->
+                <!-- 普通登录 -->
                 <div class="input_block_1">
                     <div class="f_item J_item">
                         <label class="i_label name-label" for="txtLoginID"></label>
-                        <input type="text" tabindex="1" name="txtLoginID" title="请输入帐号" id="txtLoginID" class="i_text" value="" placeholder="手机号/邮箱/会员卡号">
-                        <label id="txtLoginIDCorrent"></label>
-                        <div id="txtLoginIDTip"></div>
+                        <input type="text"  title="请输入帐号" id="txtLoginID" class="i_text" value="" placeholder="手机号/邮箱/会员卡号">
+                        
                     </div>
+                    <div class="tip" id="tip">
+		    				<i></i>
+		    				<span></span>
+		    			</div>
                     <div class="f_item J_item">
                         <label class="i_label pwd-label" for="txtLoginPwd"></label>
-                        <input type="password" tabindex="-1" name="txtLoginPwd" title="请输入密码" id="txtLoginPwd" class="i_text" placeholder="密码">
-                        <label id="txtLoginPwdCorrent"></label>
-                        <div id="txtLoginPwdTip"></div>
+                        <input type="password" title="请输入密码" id="txtLoginPwd" class="i_text" placeholder="密码">
+                        
                     </div>
+                    <div class="tip" id="tip">
+		    				<i id="oi"></i>
+		    				<span id="spa"></span>
+		    		</div>
                 </div>
                 <div class="input_block_2" style="display:none;">
                     <div class="f_item J_item">
@@ -64,19 +73,7 @@
                         <div id="txtLoginMobTip"></div>
                     </div>
                 </div>
-                <div class="f_item_code J_code_item" id="securityCode" style="display:none;">
-                    <span class="checkcode-notice">点击下方图片，转到正确方向</span>
-                    <span class="checkcode-link" style="cursor:pointer" id="aLoginChgVCode">换一张</span>
-                    <div class="code-line-content">
-                        <div class="code-line">
-                            <input type="text" style="display:none"  id="member_login_Code" class="i_text_checkCode" placeholder="验证码">
-                            <input type="hidden" name="member_login_key" id="member_login_key" value="">
-                            <div id="container"></div>
-                        </div>
-                    </div>
-                    <div id="member_login_CodeTip"></div>
-                </div>
-                
+         
                 <!-- 普通登录 end-->
 
                 <!-- 动态口令start -->
@@ -87,7 +84,7 @@
                         <input type="text" tabindex="2" name="member_mobile_Code" title="请输入动态口令" id="member_mobile_Code" class="i_text" placeholder="动态口令" style="width:180px;">
                         <label id="txtLoginDpwdCorrent"></label>
                         <div id="txtLoginDpwdTip"></div>
-                        <input type="button" value="获取手机动态口令" class="getDpwd" id="get_dynPwd" data-time="60">
+                        <input type="button" value="获取手机动态口令" class="getDpwd" id="get_dynPwd" >
                     </div>
                 </div>
                 <!-- 动态口令end -->
