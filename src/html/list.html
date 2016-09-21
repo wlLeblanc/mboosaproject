@@ -6,7 +6,9 @@
 		<link rel="stylesheet" href="../css/common.css" />
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/list.css" />
+		
 		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../js/index.js" ></script>
 		<script>
 			$(function(){
 				
@@ -27,17 +29,20 @@
 		<div class="top">
 
 			<div class="loginmax">
-				<div class="loginmax-reg">
+				<div class="loginmax-reg" style="position: relative;">
 					<ul class="register">
-						<li><a>登录</a></li>
+						<li><a href="html/login.html">登录</a></li>
 						<li><a>注册</a></li>
-						<li><a>微信</a></li>
-						<li><a>微博</a></li>
-						<li><img src="../img/shouji.jpg">手机版</li>
+						<li class="wli"><a>微信</a></li>
+						<li class="weibo"><a>微博</a></li>
+						<li class="shouji"><a><img src="../img/shouji.jpg">手机版</a></li>
 						<li><a>收藏梦芭莎</a></li>
 						<li><a>English</a></li>
 						<li class="reg-last"><a>购物车</a><img src="../img/gouwu.jpg"></li>
 					</ul>
+					<div class="weix" style="position: absolute; left: 780px; display: none;z-index:2;"><img src="../img/gw01.jpg"></div>
+					<div class="weibo_img" style="position: absolute; left: 840px; display: none;z-index:2;"><img src="../img/gw02.jpg"></div>
+					<div class="shouji_img" style="position: absolute; left:900px; display: none;z-index:2;"><img src="../img/gw03.jpg"></div>
 				</div>
 				
 			</div>
@@ -768,9 +773,11 @@
 			<script>
 			$(function(){
 				var box=$('.list_show');
-				$.ajax({
+				var pageNum = 1;
+				$.ajaxSetup({
 					type:"get",
 					url:"../data/list.json",
+					data:{pageNo:pageNum},
 					async:true,
 					success:function(res){
 						console.log(res);
@@ -781,20 +788,49 @@
 							var $dt=$('<dt/>');
 							var $dd=$('<dd/>')
 							var $img=$('<img/>');
+							var $img1=$('<img/>');
 							$dl.appendTo(li)
 							$dt.appendTo($dl)
 							$dd.appendTo($dl)
-							$img.attr('src',obj.img).css('width',230)
-							$dd.html(obj.title)
+							$img.attr('src',obj.img).addClass('hov')
+							$img1.attr('src',obj.imgx)
+							$img1.appendTo($dd)
+							$('<p/>').html(obj.price).addClass('nav').appendTo($dd)
+							$('<p/>').html(obj.title).appendTo($dd)
+							
 							$img.appendTo($dt)
-							
+//							li.on('mouseenter',function(){
+//								$(this).addClass('wom').siblings().removeClass('wom');
+//							});
 							li.appendTo(ul);
-							
+							li.hover(function(){
+								$(this).addClass('wom').siblings().removeClass('wom');
+							});
 
 						});
 						ul.appendTo(box);
 					}
+					
 				});
+				$.ajax();
+				$(window).on('scroll',function(){
+				var scrollTop = $(window).scrollTop();
+
+				// 懒加载：滚动《快到底部》的时候再加载
+				if(scrollTop >= $(document).height() - $(window).height() - 100){
+					pageNum++;
+					if(pageNum>=4){
+						pageNum = 1;
+					}
+
+					$.ajax({
+						data:{pageNo:pageNum}
+					});
+				}
+			});
+
+			// 手动触发滚动事件
+			$(window).trigger('scroll');
 			})
 		</script>
 	</body>

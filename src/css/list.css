@@ -126,12 +126,33 @@
 }
 .list_show li{
 	float: left;
-	width: ;233px
+	width: ;226px
 	height: 466px;
 	overflow: hidden;
 	margin-top:40px;
 	margin-right: 10px;
+	padding-bottom: 20px;
+	border: 1px solid #ececec;
+	
+}
+.list_show .wom{
+	border: 1px solid #F12779;
+	width: ;226px
+	height: 460px;
+}
+.list_show li dl{
+	
+	border: 1px solid #ececec;
 }
 .list_show li dd{
 	margin-top: 20px;
+}
+.list_show li dd .nav{
+	font-family: "微软雅黑";
+	color: #e71071;
+	font-size: 14px;
+}
+.list_show li dt .hov{
+	width:224px ;
+	height:310px;
 }

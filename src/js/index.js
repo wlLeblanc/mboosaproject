@@ -40,6 +40,7 @@
 					}
 					$('html,body').animate({scrollTop:scrollTop});
 				});
+				//头部扫码部分
 				$(".wli").on('mouseover',function () {
 	                  $('.weix').show();
 	                });
