@@ -1,23 +1,44 @@
 ﻿onload = function() {
-	var oUl = document.getElementById("plist");
+//	var str = getCookie("arr");
+//	console.log(str)
+//	var arr = eval(str);
+	var uname = document.getElementById("txtLoginID");
+	var pwd = document.getElementById("txtLoginPwd");
+	var oBtn=document.getElementById("btnLogin");
 
-	var str = getCookie("arr");
+	oBtn.onclick=function(){	
+		
+		var str = document.cookie;
+		
+		var obj = {};
+		
+		var arr = str.split("; ");
+		for (var i = 0; i < arr.length; i++)
+		{
+			var arr2 = arr[i].split("=");
+		
+			var name = arr2[0];
+			var val = arr2[1];
+		
+			// 在obj对象中添加了一个属性为 name 变量的值，然后这个属性的值是 val
+			obj[name] = val;
+		
+		}
+		var n=uname.value;
+		var m=pwd.value;
+	    console.log(obj)
+		if (n==obj.username &&m==obj.password)
+		{
+			alert("登录成功")
+			
+		}
+		else if(n!=obj.username&&m==obj.password){
+			alert("用户名错误")
+		}
+		else if(n==obj.username&&m!=obj.password){
+			alert("密码错误")
+		}
 
-	// var a = "[{}]"
-	// string
-	//alert(typeof str);
-
-	var arr = eval(str);
-
-	for (var i = 0; i < arr.length; i++)
-	{
-		// 创建一个商品
-		var oLi = document.createElement("li");
-
-		// 取出数组中元素，arr[i] 是一个对象,
-		//    再取出这个对象中的产品名 和 价格
-		oLi.innerHTML = arr[i].product + ", " + arr[i].price;
-
-		oUl.appendChild(oLi);
 	}
 
+}
