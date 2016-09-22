@@ -1,4 +1,3 @@
-var str = '[{product:"\u516C\u4E3B\u9774\u5B50", price:"RMB138",num:"1",img:"../images/xq_xiao_02.jpg"}, {product:"\u8776\u5986\u6D77\u84DD\u6E05\u6EE2\u7C89\u5E95\u6DB210", price:"RMB85",num:"1",img:"../images/xq_xiao_02.jpg"}]';
 
 // 将字符串重新执行，那么可以得到原来的数组
 //   因为可能存在安全问题
