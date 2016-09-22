@@ -166,4 +166,30 @@ $(function(){
 		});
 	
 })
+onload=function(){
+
+		var obtn=document.getElementById("btnRegister")
+		var oUsername=document.getElementById("txtEMail")
+		var oPassword=document.getElementById("txtRegPwd")
+		obtn.onclick = function() {
+
+			//保存 cookie
+			
+			// 取出用户名和密码
+			var strUsername = oUsername.value;
+			var strPassword = oPassword.value;
+			// 保存到cookie 中
+			var oDate = new Date();
+
+			// 得到7天后的日期对象
+			oDate.setDate(oDate.getDate() + 7);
+
+			document.cookie = "username="+strUsername+";expires=" + oDate;
+
+			document.cookie = "password="+strPassword+";expires=" + oDate;
+		
+	}
+		
+	
+}	
 

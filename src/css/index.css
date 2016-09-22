@@ -44,6 +44,78 @@
 	color: #c00;
 	display: block;
 }
+/*侧栏部分*/
+.sidebar{
+	position: fixed;
+	right: 0;
+	top: 0px;
+	width: 30px;
+	height: 100%;
+	background:#000000;
+	z-index: 2;
+	
+}
+.sidebar .sidebar_top{
+	width: 30px;
+	height:40px;
+	position: absolute;
+	top: 200px;
+	background: url(img/nitemf_09.png) no-repeat  center;
+}
+.sidebar_car{
+	position: absolute;
+	color: #FFFFFF;
+	padding-top: 30px;
+	top:240px ;
+	width: 30px;
+	height: 82px;
+	text-align: center;
+	
+	background: url(img/nitemf_05.png) no-repeat  top;
+	border-bottom: 1px solid #E0E0E0;
+	border-top: 1px solid #E0E0E0;
+}
+.sidebar_car p{
+	margin-top: 5px;
+}
+.sidebar_collect{
+	width: 30px;
+	height: 30px;
+	background: url(img/nitemf_04.png) no-repeat  center;
+	position: absolute;
+	top:360px ;
+}
+/*shouji*/
+.sidebar_ph{
+	width: 30px;
+	height: 30px;
+	background: url(img/nitemf_03.png) no-repeat  center;
+	
+	position: absolute;
+	top:400px ;
+}
+/*微信*/
+.sidebar_w{
+	width: 30px;
+	height: 30px;
+	background: url(img/nitemf_08.png) no-repeat  center;
+	position: absolute;
+	top:460px ;
+}
+.sidebar_ej{
+	width: 30px;
+	height: 30px;
+	background: url(img/nitemf_06.png) no-repeat  center;
+	position: absolute;
+	top:500px ;
+}
+.sidebar_di{
+	width: 30px;
+	height: 30px;
+	background: url(img/nitemf_07.png) no-repeat  center;
+	position: absolute;
+	top:800px ;
+}
 /*头部登录*/
 .top{width: 100%;height: 160px;}
 .top .loginmax{width:100%;height: 27px;background-color: #f6f6f6; border-bottom: 1px solid #f4f4f4;}
