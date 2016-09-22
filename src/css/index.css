@@ -49,24 +49,25 @@
 	position: fixed;
 	right: 0;
 	top: 0px;
-	width: 30px;
+	width: 36px;
 	height: 100%;
 	background:#000000;
 	z-index: 2;
+	
 	
 }
 .sidebar .sidebar_top{
 	width: 30px;
 	height:40px;
 	position: absolute;
-	top: 200px;
+	top: 20%;
 	background: url(img/nitemf_09.png) no-repeat  center;
 }
 .sidebar_car{
 	position: absolute;
 	color: #FFFFFF;
 	padding-top: 30px;
-	top:240px ;
+	top:25% ;
 	width: 30px;
 	height: 82px;
 	text-align: center;
@@ -83,39 +84,121 @@
 	height: 30px;
 	background: url(img/nitemf_04.png) no-repeat  center;
 	position: absolute;
-	top:360px ;
+	top:45% ;
 }
 /*shouji*/
-.sidebar_ph{
+.sidebarph{
 	width: 30px;
 	height: 30px;
 	background: url(img/nitemf_03.png) no-repeat  center;
-	
 	position: absolute;
-	top:400px ;
+	top:55% ;
 }
 /*微信*/
 .sidebar_w{
 	width: 30px;
 	height: 30px;
-	background: url(img/nitemf_08.png) no-repeat  center;
+	background: url(img/nitemf_08.png) no-repeat  right;
 	position: absolute;
-	top:460px ;
+	top:65%;
+	
 }
 .sidebar_ej{
 	width: 30px;
 	height: 30px;
-	background: url(img/nitemf_06.png) no-repeat  center;
+	background: url(img/nitemf_06.png) no-repeat  right;
 	position: absolute;
-	top:500px ;
+	top:75% ;
 }
 .sidebar_di{
 	width: 30px;
 	height: 30px;
-	background: url(img/nitemf_07.png) no-repeat  center;
+	background: url(img/nitemf_07.png) no-repeat  right;
 	position: absolute;
-	top:800px ;
+	top:90% ;
 }
+/*隐藏*/
+.cart_case{
+	position: fixed;
+	top: 0;
+	right: 36px;
+	height: 1087px;
+	width: 200px;
+	background: #E0E0E0;
+	z-index: 2;
+	display: none;
+	
+}
+.shouchang{
+	border: 1px solid #e5e5e5;
+    border-right: none;
+    background-color: #fff;
+	width: 105px;
+    height: 34px;
+    line-height: 34px;
+	position: fixed;
+	top:45% ;
+	right: 36px;
+	text-align: center;
+	color: #444;;
+	z-index:100;
+	display: none;
+}
+
+.sahh{
+	position: fixed;
+	top:55%;
+	width: 108px;
+	height: 147px;
+	right: 36px
+	background: url(img/app.jpg) no-repeat center;
+	z-index:100;
+	display: none;
+}
+.weixing{
+	
+	position: fixed;
+	top:65%;
+	width: 108px;
+	height: 147px;
+	right: 36px;
+	background: url(img/wei01.jpg) no-repeat center;
+	z-index:2;
+	display: none;
+}
+.kefu{
+	border: 1px solid #e5e5e5;
+    border-right: none;
+    background-color: #fff;
+	width: 105px;
+    height: 34px;
+    line-height: 34px;
+	position: fixed;
+	top:75% ;
+	right: 36px;
+	text-align: center;
+	color: #444;;
+	z-index:100;
+	display: none;
+}
+.htop{
+	border: 1px solid #e5e5e5;
+    border-right: none;
+    background-color: #fff;
+	width: 105px;
+    height: 34px;
+    line-height: 34px;
+	position: fixed;
+	top:90% ;
+	right: 36px;
+	text-align: center;
+	color: #444;;
+	z-index:100;
+	display: none;
+}
+.beij{background: #e50163;width: 30px;
+	opacity: 1;
+    height: 34px;}
 /*头部登录*/
 .top{width: 100%;height: 160px;}
 .top .loginmax{width:100%;height: 27px;background-color: #f6f6f6; border-bottom: 1px solid #f4f4f4;}

@@ -19,7 +19,8 @@ $(function(){
 				//alert('邮箱不能为空');
 				$Tip.show().html('邮箱不能为空')
 				$(this).focus();//获取当前的焦点
-				flag=false;
+			    flag=false;
+			    return;
 				
 			}
 			else 
@@ -32,7 +33,6 @@ $(function(){
 					flag=false;
 					
 				} else{
-					$Tip.html('')
 					$Tip.html('')
 					state=true;
 					flag=true;
@@ -140,8 +140,9 @@ $(function(){
 		$firmpwd.blur(function(){
 			if($(this).val()==""){
 				$firmPwdTip.html('密码不能为空')
-				$(this).focus();
 				flag=false;
+				$(this).focus();
+				
 			}
 			
 			if($('#txtConfirmPwd').val()!=$('#txtRegPwd').val()){
@@ -155,11 +156,14 @@ $(function(){
 			}
 			
 		});
+		
 		$('#btnRegister').on('click',function(){
-			if(flag){
-				alert('恭喜你注册成功')
+			if($Tip.html()=="你输入的邮箱格式不正确"||$call.html()=='你输入的手机号不正确'||$PwdTip.html()=="密码长度必须为6——18位"
+			||$('#txtMobile').val()==''||$('#txtEMail').val()==''||$('#txtRegPwd').val()==''||$('#txtConfirmPwdTip').html()=="密码不一致"){
+				alert('信息有误')	
+			}
+			else{
 				window.location.href="login.html";
-				
 			}
 			
 			
