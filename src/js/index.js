@@ -94,6 +94,48 @@
 				$('.banner-img').on('mouseout',function(){
 					auto();
 				});
+				//二级菜单
+				$('.li1').on('mouseenter',function(){
+					$('.second').show()
+					$(this).addClass('erji').find('a,h3').addClass('ha')
+					
+				})
+				$('.li1').on('mouseleave',function(){
+					$('.second').hide()
+					$(this).removeClass('erji').find('a,h3').removeClass('ha')
+					
+				})
+				$('.second').on('mouseenter',function(){
+					$(this).show()
+					$('.li1').addClass('erji').find('a,h3').addClass('ha')
+					
+				})
+					$('.second').on('mouseleave',function(){
+					$(this).hide()
+					$('.li1').removeClass('erji').find('a,h3').removeClass('ha')
+					
+				})
+				$('.li2').on('mouseenter',function(){
+					$('.second2').show()
+					$(this).addClass('erji').find('a,h3').addClass('ha')
+					
+				})
+				$('.li2').on('mouseleave',function(){
+					$('.second2').hide()
+					$(this).removeClass('erji').find('a,h3').removeClass('ha')
+					
+				})
+				$('.second2').on('mouseenter',function(){
+					$(this).show()
+					$('.li2').addClass('erji').find('a,h3').addClass('ha')
+					
+				})
+				$('.second2').on('mouseleave',function(){
+					$(this).hide()
+					$('.li2').removeClass('erji').find('a,h3').removeClass('ha')
+					
+				})
+				
 				//第二个轮播图
 				var $imgli=$('.img2list li')
 				
@@ -259,5 +301,52 @@
 				$('.htop').on('mouseleave',function(){
 					$('.htop').hide();
 				});
+				var oUl = document.getElementById("mycart");
+
+	var str = getCookie("arr");
+	// var a = "[{}]"
+	// string
+	//alert(typeof str);
+
+	var arr = eval(str);
+
+	for (var i = 0; i < arr.length; i++)
+	{
+		// 创建一个商品
+		var oLi = document.createElement("li");
+		//详细信息
+		var oSpan=document.createElement('span');
+		//合计金额
+		var oHj=document.createElement('em');
+		//数量
+		var oi=document.createElement('i');
+		//创建移除按钮
+		var oA=document.createElement('a');
+		//图片
+		var oImg=document.createElement('img');
+		var oDiv=document.createElement('h6');
+
+		// 取出数组中元素，arr[i] 是一个对象,
+		//    再取出这个对象中的产品名 和 价格
+		oA.innerHTML="移除"
+		oImg.src=arr[i].img
+		oi.innerHTML=arr[i].num;
+		oSpan.innerHTML=arr[i].price;
+		oDiv.innerHTML = arr[i].product;
+		oHj.innerHTML="￥"+(arr[i].num)*(arr[i].price)
+		//oLi.className("hov");
+		oLi.appendChild(oImg);
+		oLi.appendChild(oDiv);
+		oLi.appendChild(oSpan);
+		oLi.appendChild(oi);
+		oLi.appendChild(oHj);
+		oLi.appendChild(oA);
+		
+		oUl.appendChild(oLi);
+		
+	}
+
 				
 	});
+
+	

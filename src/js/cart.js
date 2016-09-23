@@ -9,11 +9,6 @@ onload = function() {
 	var oUl = document.getElementById("plist");
 
 	var str = getCookie("arr");
-
-	// var a = "[{}]"
-	// string
-	//alert(typeof str);
-
 	var arr = eval(str);
 
 	for (var i = 0; i < arr.length; i++)
