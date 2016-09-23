@@ -128,12 +128,17 @@ font-size:8px; text-align: center;line-height: 16px;  }
 	line-height: 50px;
 	border-bottom: 1px solid #414141;
 }
-.buygoods li span{ margin-left: 200px; width: 200px;}
-.buygoods li i{ display: inline-block;margin-left: 130px; width: 10px;}
+.buygoods li input[type=checkbox]{
+	margin-left: 55px;
+}
+.buygoods li span{ margin-left: 80px; width: 200px;}
+.buygoods li input[name=btn1]{margin-left: 90px;width: 20px; text-align: center; height:34px ; border:  1px solid #E0E0E0;}
+.buygoods li input[name=btn]{width: 20px; text-align: center; height:34px ; border:  1px solid #E0E0E0;}
+.buygoods li input[type=text]{width: 20px; text-align: center; height:30px ; border:  1px solid #E0E0E0;}
 .buygoods li h6{ display: inline-block; margin-left: 10px; width: 400px;}
-.buygoods li em{ display: inline-block;margin-left: 120px; width: 20px; color: #F12779; }
-.buygoods li a{ display: inline-block;margin-left: 80px; width: 30px;}
-.buygoods li img{  width: 30px; height: 40px; vertical-align: middle;}
+.buygoods li em{ display: inline-block;margin-left: 120px; width: 20px; color:#E00065}
+.buygoods li a{ display: inline-block;margin-left: 100px; width: 30px;}
+.buygoods li img{  margin-left: 50px; width: 30px; height: 40px; vertical-align: middle;}
 
 .shangjia {
     margin-right: 5px;

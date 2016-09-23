@@ -1,13 +1,10 @@
 onload = function() {
 	var str = getCookie("arr");
-
-	// 用于存储所有的商品
 	var arr = [];
 	if (str != "")
 	{
-		// 说明之前 cookie 中有商品的内容
-		// 取出来转换成数组
-		arr = eval(str);
+	
+		arr=JSON.parse(str);
 	}
 	//var arr = [];
 	// 商品由 名称 和 价格组成
@@ -23,10 +20,12 @@ onload = function() {
 			var oProduct =document.getElementById("product")
 			var oNum=document.getElementById("numb")
 			var oImg=document.getElementById("oimg")
+			var oCm=document.getElementById("cm")
+			
 			
 			// 取出商品名字的标签对象
-			var oSpan = oProduct.getElementsByTagName("span")[0];
-		
+			
+			
 			// 取出标签对象中的名字，也就是商品的名称
 
 			// 函数库中自定义的函数
@@ -38,7 +37,7 @@ onload = function() {
 			
 			var obj = {};
 			obj.img=oImg.src;
-			console.log(oImg.src);
+			//console.log(oImg.src);
 			obj.num=oNum.value;
 			obj.product = oProduct.innerHTML;
 			obj.price = oPrice.innerHTML;
@@ -48,7 +47,7 @@ onload = function() {
 
 			// 将数组的内容设置到 cookie 中呢？
 			// cookie 的名字是 arr, 内容是数组中的商品，过期时间是7天以后
-			addCookie("arr", arr.toSource(), 7);
+			addCookie("arr", JSON.stringify(arr), 7);
 
 
 
