@@ -62,10 +62,10 @@ $(function(){
 			
 	}
 	//点击减少数量
-	$('li input[name=btn1]').on('click',function(){
-		var $num=$(this).parent('li').find('input[type=text]')
-		var ss=$num.val();
-		
+		$('li input[name=btn1]').on('click',function(){
+			var $num=$(this).parent('li').find('input[type=text]')
+			var ss=$num.val();
+			
 		    ss--;
 		    if(ss==0){
 		    	ss=1;
@@ -75,7 +75,7 @@ $(function(){
 		    var $jiage=$(this).parent('li').find('span');
 		    
 		    var zj=$jiage.html()*ss
-			    $zj.html(zj)
+			$zj.html(zj)
 		});
 		//点击加数量
 		$('li input[name=btn]').on('click',function(){
@@ -91,10 +91,22 @@ $(function(){
 			    $zj.html(zj)
 			    
 		})
-		
-	$('a').on('click',function(){
-		$(this).parent().remove();
-	})
+		//总价计算
+		$('li input[type=checkbox]').on('click',function(){
+			console.log('ll')
+			if ($(this).prop('checked',true)) {
+				var $zongji=$(this).parent('li').find('em')
+				
+				 $('.comjia').html($zongji.html());
+				} 
+			else{
+				
+			}
+		})
+		//移除商品	
+		$('a').on('click',function(){
+			$(this).parent().remove();
+		})
 	
 	
 	

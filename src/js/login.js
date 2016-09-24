@@ -38,6 +38,9 @@
 		else if(n==obj.username&&m!=obj.password){
 			alert("密码错误");
 		}
+		else{
+			alert('你输入的用户名和密码都有误，请重新输入')
+		}
 
 	}
 

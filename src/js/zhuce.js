@@ -88,7 +88,7 @@ $(function(){
 		//密码改变时
 		$pwd.on('input',function(){
 			//判断密码的强弱
-				if(6<$(this).val().length&&$(this).val().length<12){
+				if(6<=$(this).val().length&&$(this).val().length<12){
 					$PwdTip.html("");
 					$PwdTip.html("密码强度：弱")
 					flag=true;
@@ -104,7 +104,7 @@ $(function(){
 					flag=true;
 				}
 				 else{
-					if ($(this).val().length<6||$(this).val().length>=18) {
+					if ($(this).val().length<=6||$(this).val().length>18) {
 						$PwdTip.html("");
 						$PwdTip.html("密码长度必须为6——18位")
 						flag=false;
@@ -163,6 +163,7 @@ $(function(){
 				alert('信息有误')	
 			}
 			else{
+				alert("恭喜你注册成功")
 				window.location.href="login.html";
 			}
 			

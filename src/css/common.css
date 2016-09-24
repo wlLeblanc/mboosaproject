@@ -34,7 +34,7 @@ text-align: center; border-right:1px solid #747474; color: #D7D7D7;}
 .footer .m_info{ margin: 25px auto;width: 1200px; height: 144px; padding-top: 5px;}
 
 .footer .m_info ul {float: left; padding-bottom: 0;
-padding-left: 32px;*padding-left: 30px;padding-right: 32px;
+padding-left: 32px;padding-left: 30px;padding-right: 32px;
 padding-top: 0;}
 .footer .m_info ul li{height: 25px; line-height: 25px;}
 .footer .m_info ul li a {color:#747474;}
