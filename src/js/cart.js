@@ -106,6 +106,7 @@ $(function(){
 		//移除商品	
 		$('a').on('click',function(){
 			$(this).parent().remove();
+			removeCookie(arr);
 		})
 	
 	
