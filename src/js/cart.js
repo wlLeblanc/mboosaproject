@@ -58,6 +58,8 @@ $(function(){
 		oLi.appendChild(oHj);
 		oLi.appendChild(oA);
 		oUl.appendChild(oLi);
+		//移除商品	
+		
 		
 			
 	}
@@ -103,12 +105,11 @@ $(function(){
 				
 			}
 		})
-		//移除商品	
+		
 		$('a').on('click',function(){
 			$(this).parent().remove();
-			removeCookie(arr);
+			$.cookie('arr',null)
 		})
-	
 	
 	
 })
